@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block crawling of any future internal-only paths if added later.
+# Keep the marketing site fully open by default.
+
+Sitemap: https://safiripro.com/sitemap.xml

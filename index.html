@@ -5,13 +5,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SafiriPro — The Operating System for Safari & Travel Businesses</title>
   <meta name="description" content="Manage clients, build stunning trip proposals, track your pipeline, and close more bookings — all from one platform built for African travel operators." />
+  <meta name="author" content="Peskaya Limited" />
+  <meta name="theme-color" content="#111827" />
 
+  <link rel="canonical" href="https://safiripro.com/" />
+
+  <!-- Search engine verification — paste your tokens here once issued, then uncomment.
+       See SEO_SETUP.md for the full Search Console walk-through.
+  <meta name="google-site-verification" content="PASTE_GOOGLE_TOKEN_HERE" />
+  <meta name="msvalidate.01" content="PASTE_BING_TOKEN_HERE" />
+  -->
+
+
+  <!-- Open Graph -->
   <meta property="og:title" content="SafiriPro — The Operating System for Safari & Travel Businesses" />
-  <meta property="og:description" content="Manage clients, build stunning trip proposals, track your pipeline, and close more bookings." />
+  <meta property="og:description" content="Manage clients, build stunning trip proposals, track your pipeline, and close more bookings — all from one platform built for African travel operators." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://safiripro.com" />
+  <meta property="og:url" content="https://safiripro.com/" />
+  <meta property="og:site_name" content="SafiriPro" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://safiripro.com/images/safiri_logo_main.png" />
+  <meta property="og:image:alt" content="SafiriPro — the operating system for safari and travel businesses" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SafiriPro — The Operating System for Safari & Travel Businesses" />
+  <meta name="twitter:description" content="Manage clients, build stunning trip proposals, track your pipeline, and close more bookings — all from one platform built for African travel operators." />
+  <meta name="twitter:image" content="https://safiripro.com/images/safiri_logo_main.png" />
 
   <link rel="icon" type="image/png" href="images/safiri_logo.png" />
+  <link rel="apple-touch-icon" href="images/safiri_logo.png" />
+
+  <!-- Structured data: Organization (consistent identity across the site) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SafiriPro",
+    "alternateName": "Peskaya Limited",
+    "url": "https://safiripro.com/",
+    "logo": "https://safiripro.com/images/safiri_logo.png",
+    "description": "The operating system for safari and travel businesses, built in Nairobi for tour operators across Africa.",
+    "foundingLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@safiripro.com",
+      "contactType": "customer support",
+      "availableLanguage": ["English"]
+    }
+  }
+  </script>
+
+  <!-- Structured data: WebSite (helps Google associate the brand with the URL) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SafiriPro",
+    "url": "https://safiripro.com/",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SafiriPro"
+    }
+  }
+  </script>
+
+  <!-- Structured data: SoftwareApplication with priced offers — drives the
+       pricing rich snippet in Google search results. Prices and IDs match
+       server/config/plans.js; keep in sync when tiers change. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SafiriPro",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "CRM",
+    "operatingSystem": "Web (any modern browser)",
+    "url": "https://safiripro.com/",
+    "description": "Trip-quote builder, travel-CRM, supplier catalog, AI itinerary drafting, hotel vouchers, and invoicing with deposit-and-balance payment scheduling — built for safari and travel operators.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Peskaya Limited"
+    },
+    "featureList": [
+      "Branded day-by-day trip proposals with shareable links",
+      "Travel-specific CRM with deals, contacts, and pipelines",
+      "Supplier catalog: hotels, activities, transport, destinations",
+      "AI itinerary drafting from your own inventory",
+      "Hotel vouchers auto-generated from accepted quotes",
+      "Invoicing with deposit + balance scheduling",
+      "Email composer with pre-built templates",
+      "WhatsApp + email reminders",
+      "Webhooks and integrations (Zapier, n8n)",
+      "Pipeline analytics and reporting",
+      "White-label client-facing pages"
+    ],
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Starter",
+        "description": "For one- or two-person operations.",
+        "price": "2500",
+        "priceCurrency": "KES",
+        "url": "https://safiripro.com/#pricing",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "2500",
+          "priceCurrency": "KES",
+          "billingIncrement": 1,
+          "unitCode": "MON"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Pro",
+        "description": "For growing safari businesses.",
+        "price": "7500",
+        "priceCurrency": "KES",
+        "url": "https://safiripro.com/#pricing",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "7500",
+          "priceCurrency": "KES",
+          "billingIncrement": 1,
+          "unitCode": "MON"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Business",
+        "description": "For established operators.",
+        "price": "18000",
+        "priceCurrency": "KES",
+        "url": "https://safiripro.com/#pricing",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "18000",
+          "priceCurrency": "KES",
+          "billingIncrement": 1,
+          "unitCode": "MON"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Enterprise",
+        "description": "For DMCs and multi-country operators.",
+        "priceCurrency": "KES",
+        "price": "50000",
+        "url": "https://safiripro.com/#pricing",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "50000",
+          "priceCurrency": "KES",
+          "billingIncrement": 1,
+          "unitCode": "MON",
+          "description": "Starting price; final terms negotiated"
+        }
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,6 +232,7 @@
         <a href="#features" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">Features</a>
         <a href="#how-it-works" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">How it works</a>
         <a href="#pricing" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">Pricing</a>
+        <a href="#faq" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">FAQ</a>
         <a href="#testimonials" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">Why us</a>
       </div>
 
@@ -83,6 +250,7 @@
       <a href="#features" class="block text-sm text-gray-600 py-2">Features</a>
       <a href="#how-it-works" class="block text-sm text-gray-600 py-2">How it works</a>
       <a href="#pricing" class="block text-sm text-gray-600 py-2">Pricing</a>
+      <a href="#faq" class="block text-sm text-gray-600 py-2">FAQ</a>
       <a href="#testimonials" class="block text-sm text-gray-600 py-2">Why us</a>
       <div class="pt-3 border-t border-gray-100 flex gap-3">
         <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-gray-600 py-2.5 rounded-lg border border-gray-200">Sign in</a>
@@ -244,6 +412,21 @@
           <p class="text-sm text-gray-500 leading-relaxed">Describe a trip in plain English and get a full itinerary drafted from your own hotels and activities. Plus AI narratives, deal summaries, and email drafts.</p>
         </div>
         <div class="feature-card">
+          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="receipt" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
+          <h3 class="text-base font-semibold text-gray-900 mb-2">Invoices with deposit &amp; balance</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Generate invoices in one click from accepted quotes, or split into deposit + balance pairs with travel-aware due dates. Email PDFs straight to clients with your bank or M-Pesa details. Track sent and paid status — no spreadsheet.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="bed-double" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
+          <h3 class="text-base font-semibold text-gray-900 mb-2">Hotel vouchers, ready to send</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Issue voucher PDFs your guests present at check-in. Auto-generate them from an accepted quote — every lodge, dates, room type, and meal plan filled in. Email straight to client and lodge in one click.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="mail" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
+          <h3 class="text-base font-semibold text-gray-900 mb-2">Email clients in your voice</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Pre-built templates for pre-arrival checklists, lodge confirmations, post-trip thank-yous, and quote follow-ups. Edit before sending. Your name, your brand — replies come back to your inbox, not ours.</p>
+        </div>
+        <div class="feature-card">
           <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="bell" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
           <h3 class="text-base font-semibold text-gray-900 mb-2">WhatsApp &amp; email reminders</h3>
           <p class="text-sm text-gray-500 leading-relaxed">Assigned tasks, deal handoffs, and overdue alerts go straight to your team — via WhatsApp on higher plans, email on all.</p>
@@ -354,15 +537,15 @@
         <!-- Starter -->
         <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col">
           <p class="text-sm font-semibold text-gray-900">Starter</p>
-          <p class="text-xs mt-1 text-gray-500">For solo operators getting started.</p>
+          <p class="text-xs mt-1 text-gray-500">For one- or two-person operations.</p>
           <div class="mt-5 mb-6">
-            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">KES 2,499</span>
+            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">KES 2,500</span>
             <span class="text-sm text-gray-400"> / month</span>
           </div>
           <ul class="space-y-2.5 mb-8 flex-1">
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>2 team members</li>
-            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>15 quotes / month</li>
-            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>120 AI credits / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>25 quotes / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>250 AI credits / month</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>50 hotels · 50 activities</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Email reminders</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Email support (48h)</li>
@@ -382,7 +565,7 @@
           <ul class="space-y-2.5 mb-8 flex-1">
             <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>8 team members</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>Unlimited quotes</li>
-            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>400 AI credits / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>1,500 AI credits / month</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>250 hotels · 250 activities</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>WhatsApp reminders</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>Webhooks (Zapier, n8n)</li>
@@ -402,7 +585,7 @@
           <ul class="space-y-2.5 mb-8 flex-1">
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>25 team members</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Unlimited quotes</li>
-            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>1,500 AI credits / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>6,000 AI credits / month</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>1,500 hotels · 1,500 activities</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>White-label quote pages</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Custom PDF presets</li>
@@ -417,7 +600,7 @@
           <p class="text-xs mt-1 text-gray-500">For DMCs and multi-country operators.</p>
           <div class="mt-5 mb-6">
             <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">Custom</span>
-            <span class="block text-xs text-gray-400 mt-1">from KES 45,000 / month</span>
+            <span class="block text-xs text-gray-400 mt-1">from KES 50,000 / month</span>
           </div>
           <ul class="space-y-2.5 mb-8 flex-1">
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Unlimited team members</li>
@@ -433,11 +616,138 @@
       </div>
 
       <p class="text-center text-xs text-gray-400 mt-8 max-w-2xl mx-auto leading-relaxed">
-        AI credits are spent on itinerary drafting (10 per draft), narratives (3 per day), and email/summary assists (1 each).
+        AI credits: itinerary drafts cost 50 each · per-day narratives 5 · email and summary assists 1.
+        Run out? Top-up packs from KES 600. PDF rate-card extraction is metered separately by page.
         Payments in KES via Paystack. Cancel anytime.
       </p>
     </div>
   </section>
+
+  <!-- ═══════════════════ FAQ ═══════════════════ -->
+  <section id="faq" class="py-20 md:py-28 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">FAQ</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight font-serif">Common questions</h2>
+        <p class="text-sm text-gray-500 mt-3">If you can't find what you need, just <a href="mailto:hello@safiripro.com" class="text-gray-900 underline underline-offset-2 hover:text-gray-600">email us</a>.</p>
+      </div>
+
+      <div class="space-y-3">
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">What's included in the 14-day free trial?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-500 leading-relaxed mt-3">Every account starts with 14 days of access at the trial limits: 2 team members, 5 quotes, 100 AI credits, 10 PDF rate-card extraction pages, and 1 pipeline. No credit card is required to start. You can upgrade to a paid plan anytime; if you don't, the workspace becomes read-only at the end of the trial until you choose a plan.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">Can I cancel anytime, or am I locked into a contract?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-500 leading-relaxed mt-3">No contract. Monthly plans are billed via Paystack and you can cancel at any time from the Billing page — your subscription stays active until the end of the period you've already paid for. Annual plans (which save you two months) can be cancelled too; renewals just stop at the next anniversary. Enterprise terms are negotiated and can include longer commitments if you choose.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">Who owns my customer and booking data?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-500 leading-relaxed mt-3">You do. We process your data so the platform works, but the contacts, deals, quotes, invoices, and supplier records are yours. You can export everything to CSV at any time, and we'll never sell, share, or resell your data — full details are in our privacy policy.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">Do emails to my clients come from my domain or yours?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-500 leading-relaxed mt-3">By default, emails send from a SafiriPro mailbox but show your operator name and company in the From field, with replies routed back to your actual email address. On higher tiers, you can verify your own domain so emails actually send as you (e.g. <code class="text-xs bg-gray-100 px-1 py-0.5 rounded">sara@yourcompany.com</code>) — this requires adding two DNS records and takes about ten minutes.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">What currencies and payment methods do you support?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-500 leading-relaxed mt-3">Quotes and invoices can be issued in any major currency (USD, EUR, GBP, KES, TZS, UGX, ZAR, and more), with FX rates snapshotted at quote time so future rate moves don't silently change historical totals. SafiriPro itself is billed in KES via Paystack — for client payments, your invoices include your own bank or M-Pesa details so you collect directly.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">Do you have an API or integrations with my other tools?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-500 leading-relaxed mt-3">Yes. Pro and above include outbound webhooks for deal, quote, and invoice events — point them at Zapier, n8n, Make, or your own service to trigger anything you like. We also fire signed accounting webhooks for invoice.created / sent / paid / cancelled so you can sync to QuickBooks or Xero. Direct REST API access is available on Enterprise.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Structured data: FAQPage. Question/answer text MUST match the visible
+       FAQ above word-for-word — Google penalises mismatched FAQ schema. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's included in the 14-day free trial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every account starts with 14 days of access at the trial limits: 2 team members, 5 quotes, 100 AI credits, 10 PDF rate-card extraction pages, and 1 pipeline. No credit card is required to start. You can upgrade to a paid plan anytime; if you don't, the workspace becomes read-only at the end of the trial until you choose a plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I cancel anytime, or am I locked into a contract?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No contract. Monthly plans are billed via Paystack and you can cancel at any time from the Billing page — your subscription stays active until the end of the period you've already paid for. Annual plans (which save you two months) can be cancelled too; renewals just stop at the next anniversary. Enterprise terms are negotiated and can include longer commitments if you choose."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who owns my customer and booking data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You do. We process your data so the platform works, but the contacts, deals, quotes, invoices, and supplier records are yours. You can export everything to CSV at any time, and we'll never sell, share, or resell your data — full details are in our privacy policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do emails to my clients come from my domain or yours?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By default, emails send from a SafiriPro mailbox but show your operator name and company in the From field, with replies routed back to your actual email address. On higher tiers, you can verify your own domain so emails actually send as you (e.g. sara@yourcompany.com) — this requires adding two DNS records and takes about ten minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What currencies and payment methods do you support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quotes and invoices can be issued in any major currency (USD, EUR, GBP, KES, TZS, UGX, ZAR, and more), with FX rates snapshotted at quote time so future rate moves don't silently change historical totals. SafiriPro itself is billed in KES via Paystack — for client payments, your invoices include your own bank or M-Pesa details so you collect directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you have an API or integrations with my other tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pro and above include outbound webhooks for deal, quote, and invoice events — point them at Zapier, n8n, Make, or your own service to trigger anything you like. We also fire signed accounting webhooks for invoice.created / sent / paid / cancelled so you can sync to QuickBooks or Xero. Direct REST API access is available on Enterprise."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- ═══════════════════ FINAL CTA ═══════════════════ -->
   <section class="py-20 md:py-28 px-6">
