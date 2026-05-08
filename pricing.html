@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — SafiriPro</title>
+  <meta name="description" content="Simple monthly pricing for safari and travel operators. Plans from KES 2,500/month with a 14-day free trial. No credit card required. Cancel anytime." />
+  <meta name="author" content="Peskaya Limited" />
+  <meta name="theme-color" content="#111827" />
+
+  <link rel="canonical" href="https://safiripro.com/pricing.html" />
+
+  <meta property="og:title" content="Pricing — SafiriPro" />
+  <meta property="og:description" content="Plans from KES 2,500/month. 14-day free trial. No credit card required." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://safiripro.com/pricing.html" />
+  <meta property="og:site_name" content="SafiriPro" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://safiripro.com/images/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pricing — SafiriPro" />
+  <meta name="twitter:description" content="Plans from KES 2,500/month. 14-day free trial." />
+  <meta name="twitter:image" content="https://safiripro.com/images/og-card.png" />
+
+  <link rel="icon" type="image/png" href="images/safiri_logo.png" />
+  <link rel="apple-touch-icon" href="images/safiri_logo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://safiripro.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://safiripro.com/pricing.html" }
+    ]
+  }
+  </script>
+
+  <!-- Pricing offers, kept in sync with server/config/plans.js -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SafiriPro",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "CRM",
+    "operatingSystem": "Web (any modern browser)",
+    "url": "https://safiripro.com/pricing.html",
+    "publisher": { "@type": "Organization", "name": "Peskaya Limited" },
+    "offers": [
+      { "@type": "Offer", "name": "Starter", "price": "2500", "priceCurrency": "KES", "url": "https://safiripro.com/pricing.html" },
+      { "@type": "Offer", "name": "Pro", "price": "7500", "priceCurrency": "KES", "url": "https://safiripro.com/pricing.html" },
+      { "@type": "Offer", "name": "Business", "price": "18000", "priceCurrency": "KES", "url": "https://safiripro.com/pricing.html" },
+      { "@type": "Offer", "name": "Enterprise", "price": "50000", "priceCurrency": "KES", "url": "https://safiripro.com/pricing.html" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#B04A2C',
+              dark: '#8F3E25',
+              tint: '#F7EFEB',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter Tight', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['Fraunces', 'Georgia', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="antialiased bg-white text-gray-900">
+
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="images/safiri_logo.png" alt="SafiriPro" class="h-8 w-auto object-contain" />
+        <span class="text-base font-bold text-gray-900 tracking-tight">SafiriPro</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="features.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a>
+        <a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a>
+        <a href="pricing.html" class="text-sm text-gray-900 font-medium transition-colors">Pricing</a>
+        <a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://app.safiripro.com/login" class="text-sm text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors">Sign in</a>
+        <a href="https://app.safiripro.com/register" class="text-sm font-medium bg-brand text-white px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">Get started</a>
+      </div>
+
+      <button onclick="document.getElementById('mobile-nav').classList.toggle('hidden')" class="md:hidden p-2 text-gray-600">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div id="mobile-nav" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
+      <a href="features.html" class="block text-sm text-gray-600 py-2">Features</a>
+      <a href="index.html#how-it-works" class="block text-sm text-gray-600 py-2">How it works</a>
+      <a href="pricing.html" class="block text-sm text-gray-900 font-medium py-2">Pricing</a>
+      <a href="index.html#faq" class="block text-sm text-gray-600 py-2">FAQ</a>
+      <div class="pt-3 border-t border-gray-100 flex gap-3">
+        <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-gray-600 py-2.5 rounded-lg border border-gray-200">Sign in</a>
+        <a href="https://app.safiripro.com/register" class="flex-1 text-center text-sm font-medium bg-brand text-white py-2.5 rounded-lg">Get started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="pt-28 pb-12 md:pt-32 md:pb-16 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-4">Pricing</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.08] tracking-tight font-serif">
+        Simple pricing,<br class="hidden sm:block" />
+        <span class="text-gray-400">no surprises</span>
+      </h1>
+      <p class="text-lg text-gray-600 mt-6 leading-relaxed">
+        Every plan starts with a 14-day free trial. No credit card required. Pay annually and get two months free.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ TIERS ═══════════════════ -->
+  <section class="px-6 pb-14 md:pb-20">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Starter -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col">
+          <p class="text-sm font-semibold text-gray-900">Starter</p>
+          <p class="text-xs mt-1 text-gray-500">For one- or two-person operations.</p>
+          <div class="mt-5 mb-6">
+            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">KES 2,500</span>
+            <span class="text-sm text-gray-500"> / month</span>
+          </div>
+          <ul class="space-y-2.5 mb-8 flex-1">
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>2 team members</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>25 quotes / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>250 AI credits / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>50 hotels · 50 activities</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Email reminders</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Email support (48h)</li>
+          </ul>
+          <a href="https://app.safiripro.com/register" class="block text-center py-2.5 rounded-lg text-sm font-medium bg-white border border-gray-300 text-gray-900 hover:border-gray-900 hover:bg-gray-50 transition-colors">Start free trial</a>
+        </div>
+
+        <!-- Pro -->
+        <div class="bg-gray-900 text-white border-2 border-gray-900 rounded-xl p-6 relative flex flex-col">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-brand text-white text-[10px] font-bold uppercase tracking-wider rounded-full">Most popular</div>
+          <p class="text-sm font-semibold text-white">Pro</p>
+          <p class="text-xs mt-1 text-gray-400">For growing safari businesses.</p>
+          <div class="mt-5 mb-6">
+            <span class="text-3xl font-bold tracking-tight text-white font-serif">KES 7,500</span>
+            <span class="text-sm text-gray-400"> / month</span>
+          </div>
+          <ul class="space-y-2.5 mb-8 flex-1">
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>8 team members</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>Unlimited quotes</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>1,500 AI credits / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>250 hotels · 250 activities</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>WhatsApp reminders</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>Webhooks (Zapier, n8n)</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-300"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-white"></i>Email support (24h)</li>
+          </ul>
+          <a href="https://app.safiripro.com/register" class="block text-center py-2.5 rounded-lg text-sm font-medium bg-brand text-white hover:bg-brand-dark transition-colors">Start free trial</a>
+        </div>
+
+        <!-- Business -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col">
+          <p class="text-sm font-semibold text-gray-900">Business</p>
+          <p class="text-xs mt-1 text-gray-500">For established operators.</p>
+          <div class="mt-5 mb-6">
+            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">KES 18,000</span>
+            <span class="text-sm text-gray-500"> / month</span>
+          </div>
+          <ul class="space-y-2.5 mb-8 flex-1">
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>25 team members</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Unlimited quotes</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>6,000 AI credits / month</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>1,500 hotels · 1,500 activities</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>White-label quote pages</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Custom PDF presets</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Priority chat support</li>
+          </ul>
+          <a href="https://app.safiripro.com/register" class="block text-center py-2.5 rounded-lg text-sm font-medium bg-white border border-gray-300 text-gray-900 hover:border-gray-900 hover:bg-gray-50 transition-colors">Start free trial</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col">
+          <p class="text-sm font-semibold text-gray-900">Enterprise</p>
+          <p class="text-xs mt-1 text-gray-500">For DMCs and multi-country operators.</p>
+          <div class="mt-5 mb-6">
+            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">Custom</span>
+            <span class="block text-xs text-gray-500 mt-1">from KES 50,000 / month</span>
+          </div>
+          <ul class="space-y-2.5 mb-8 flex-1">
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Unlimited team members</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Unlimited inventory</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Custom AI credit allotment</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Custom integrations</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Dedicated CSM &amp; SLA</li>
+            <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Negotiated annual terms</li>
+          </ul>
+          <a href="mailto:hello@safiripro.com" class="block text-center py-2.5 rounded-lg text-sm font-medium bg-gray-900 text-white hover:bg-gray-800 transition-colors">Talk to sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ AI CREDITS DETAIL ═══════════════════ -->
+  <section class="py-12 md:py-16 px-6 bg-gray-50">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">AI credits</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight font-serif">How AI credits work</h2>
+      <p class="text-sm text-gray-600 mt-3 leading-relaxed">SafiriPro's AI features are metered so heavy users pay for what they use, and light users don't subsidize them. Most operators never run out.</p>
+
+      <div class="mt-8 bg-white border border-gray-200 rounded-xl divide-y divide-gray-100">
+        <div class="p-5 flex items-start justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Itinerary draft</p>
+            <p class="text-xs text-gray-600 mt-0.5">A full multi-day itinerary built from your inventory.</p>
+          </div>
+          <span class="text-sm font-semibold text-brand whitespace-nowrap">50 credits</span>
+        </div>
+        <div class="p-5 flex items-start justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Per-day narrative</p>
+            <p class="text-xs text-gray-600 mt-0.5">Polished prose for a single day in a quote.</p>
+          </div>
+          <span class="text-sm font-semibold text-brand whitespace-nowrap">5 credits</span>
+        </div>
+        <div class="p-5 flex items-start justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Email or summary assist</p>
+            <p class="text-xs text-gray-600 mt-0.5">Draft a follow-up, summarize a deal, rewrite a paragraph.</p>
+          </div>
+          <span class="text-sm font-semibold text-brand whitespace-nowrap">1 credit</span>
+        </div>
+        <div class="p-5 flex items-start justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold text-gray-900">PDF rate-card extraction</p>
+            <p class="text-xs text-gray-600 mt-0.5">Parsed separately by page, not from your monthly credit pool.</p>
+          </div>
+          <span class="text-sm font-semibold text-gray-500 whitespace-nowrap">metered</span>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-600 mt-6 leading-relaxed">Run out before month-end? Top-up packs start at <span class="font-semibold text-gray-900">KES 600</span>. Unused credits don't roll over — credits reset on each billing cycle.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PRICING FAQ ═══════════════════ -->
+  <section class="py-12 md:py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">Billing FAQ</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight font-serif">Common pricing questions</h2>
+      </div>
+
+      <div class="space-y-3">
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">Can I change plans later?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-600 leading-relaxed mt-3">Yes, anytime. Upgrades take effect immediately and you're charged the prorated difference. Downgrades take effect at the next billing cycle so you keep what you paid for. Your data, contacts, quotes, and supplier records all stay in place across plan changes.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">What's the difference between monthly and annual billing?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-600 leading-relaxed mt-3">Annual plans give you two months free — you pay for ten months and get twelve. They're billed once at the start of the year. Monthly plans renew on the same day each month. Both can be cancelled at any time and stay active until the end of the period you've already paid for.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">What happens at the end of my free trial?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-600 leading-relaxed mt-3">Your workspace becomes read-only until you choose a plan — you can still see all your contacts, quotes, and suppliers, but you can't create new ones. Pick a plan from the Billing page and everything resumes immediately. Nothing is deleted, even if you wait weeks to upgrade.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">Do you offer refunds?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-600 leading-relaxed mt-3">If something goes wrong and you contact us within 14 days of a charge, we'll refund it — no questions, no friction. After that, plans run to the end of the period you've paid for and don't auto-renew if you cancel. Annual plans are pro-rated on request for the months you didn't use.</p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <span class="text-base font-semibold text-gray-900">Which payment methods do you accept?</span>
+            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+          </summary>
+          <p class="text-sm text-gray-600 leading-relaxed mt-3">SafiriPro is billed in KES via Paystack — Visa, Mastercard, and M-Pesa are supported. Enterprise customers can request invoice billing with bank transfer. (Your <em>clients</em> can pay you in any currency, with your own bank or M-Pesa details on the invoice — that's separate from how you pay us.)</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+  <section class="py-14 md:py-20 px-6 bg-gray-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight font-serif">Try it free for 14 days</h2>
+      <p class="text-sm text-gray-600 mt-4 max-w-lg mx-auto">No credit card required. Set up takes less than 5 minutes.</p>
+      <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
+        <a href="https://app.safiripro.com/register" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand text-white text-sm font-semibold rounded-lg hover:bg-brand-dark transition-colors">
+          Start for free <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="mailto:hello@safiripro.com" class="inline-flex items-center gap-2 px-6 py-3.5 text-gray-700 text-sm font-medium border border-gray-200 rounded-lg hover:border-gray-300 hover:bg-white transition-colors">
+          <i data-lucide="phone" class="w-4 h-4"></i> Talk to sales
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="border-t border-gray-100 py-10 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 mb-8">
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 mb-3">
+            <img src="images/safiri_logo.png" alt="SafiriPro" class="w-6 h-6 object-contain" />
+            <span class="text-base font-bold text-gray-900">SafiriPro</span>
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed max-w-xs">The operating system for safari and travel businesses. Built in Nairobi for operators across Africa.</p>
+          <p class="text-[11px] text-gray-500 mt-2">A product of <span class="font-semibold text-gray-700">Peskaya Limited.</span></p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Product</p>
+          <ul class="space-y-2">
+            <li><a href="features.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a></li>
+            <li><a href="pricing.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</a></li>
+            <li><a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a></li>
+            <li><a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Company</p>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About</a></li>
+            <li><a href="mailto:hello@safiripro.com" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Legal</p>
+          <ul class="space-y-2">
+            <li><a href="privacy.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Privacy</a></li>
+            <li><a href="terms.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms</a></li>
+            <li><a href="security.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-gray-100">
+        <p class="text-xs text-gray-500">&copy; 2026 SafiriPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
