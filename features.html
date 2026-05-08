@@ -6,7 +6,7 @@
   <title>Features — SafiriPro</title>
   <meta name="description" content="Trip-quote builder, travel-CRM, supplier catalog, AI itinerary drafting, hotel vouchers, invoicing, and more — every feature in SafiriPro, built for safari and travel operators." />
   <meta name="author" content="Peskaya Limited" />
-  <meta name="theme-color" content="#111827" />
+  <meta name="theme-color" content="#5048E5" />
 
   <link rel="canonical" href="https://safiripro.com/features.html" />
 
@@ -20,6 +20,7 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="SafiriPro — run your safari business from one platform. Start free for 14 days." />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Features — SafiriPro" />
@@ -42,7 +43,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -54,6 +55,7 @@
               DEFAULT: '#5048E5',
               dark: '#3F37C0',
               tint: '#EEF0FF',
+              ink: '#1B1740',
             },
             cream: {
               DEFAULT: '#F4F0E6',
@@ -73,11 +75,9 @@
 
   <style>
     html { scroll-behavior: smooth; }
-    .feature-card:hover .feature-icon { background-color: #111827; color: white; }
-    .feature-icon { transition: background-color 0.3s, color 0.3s; }
   </style>
 </head>
-<body class="antialiased bg-white text-gray-900">
+<body class="antialiased bg-white text-gray-900 selection:bg-brand selection:text-white">
 
   <!-- ═══════════════════ NAV ═══════════════════ -->
   <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
@@ -119,12 +119,12 @@
   <!-- ═══════════════════ HERO ═══════════════════ -->
   <section class="pt-28 pb-12 md:pt-32 md:pb-16 px-6">
     <div class="max-w-4xl mx-auto text-center">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-4">Features</p>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.08] tracking-tight font-serif">
-        Everything in <span class="text-gray-400">SafiriPro</span>
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand mb-4">Features</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.05] tracking-[-0.025em]">
+        Everything in <span class="italic font-semibold text-brand">SafiriPro.</span>
       </h1>
       <p class="text-lg text-gray-600 mt-6 max-w-2xl mx-auto leading-relaxed">
-        Twelve features that replace the spreadsheets, Word docs, and copy-pasted emails you're using today — built for the way safari and travel operators actually work.
+        Twelve features that replace the spreadsheets, Word docs, and copy-pasted emails — built for the way safari and travel operators actually work.
       </p>
     </div>
   </section>
@@ -133,40 +133,57 @@
   <section class="py-12 md:py-16 px-6">
     <div class="max-w-6xl mx-auto">
       <div class="max-w-2xl mb-12">
-        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">Run your business</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight font-serif">The operational core</h2>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Run your business</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">The operational core</h2>
         <p class="text-sm text-gray-600 mt-3 leading-relaxed">Everything you do every day — from the first inquiry to the final voucher.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="file-text" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Beautiful trip quotes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="file-text" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Beautiful trip quotes</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Build branded PDF and shareable-link proposals with day-by-day itineraries, live pricing, and multiple cover layouts. Track when clients open them, how long they spend on each page, and get notified the moment they accept.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="users" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">CRM built for travel</h3>
+
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="users" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">CRM built for travel</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Contacts, deals, tasks, and custom pipelines with trip-specific fields operators actually use — destination, traveler count, departure window, deposit status. Track every inquiry from first message to booking.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="layers" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Your supplier catalog</h3>
+
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="layers" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Your supplier catalog</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Hotels, activities, destinations, transport — all in one place with rates, images, and meal plans. Update a rate once and every future quote uses it. No more spreadsheet drift or pricing errors mid-season.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="bed-double" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Hotel vouchers, ready to send</h3>
+
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="bed-double" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Hotel vouchers, ready to send</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Issue voucher PDFs your guests present at check-in. Auto-generated from an accepted quote — every lodge, dates, room type, and meal plan filled in. Email straight to the client and the lodge in one click.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="receipt" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Invoices with deposit &amp; balance</h3>
+
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="receipt" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Invoices with deposit &amp; balance</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Generate invoices in one click from accepted quotes, or split into deposit + balance pairs with travel-aware due dates. Email PDFs straight to clients with your bank or M-Pesa details. Track sent and paid status — no spreadsheet.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="mail" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Email clients in your voice</h3>
+
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="mail" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Email clients in your voice</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Pre-built templates for pre-arrival checklists, lodge confirmations, post-trip thank-yous, and quote follow-ups. Edit before sending. Your name, your brand — replies come back to your inbox, not ours.</p>
         </div>
       </div>
@@ -177,30 +194,41 @@
   <section class="py-12 md:py-16 px-6 bg-cream">
     <div class="max-w-6xl mx-auto">
       <div class="max-w-2xl mb-12">
-        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">Win more bookings</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight font-serif">Tools that compound</h2>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Win more bookings</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Tools that compound</h2>
         <p class="text-sm text-gray-600 mt-3 leading-relaxed">The leverage that turns a busy operator into a high-conversion one.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-12">
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="sparkles" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">AI that uses your inventory</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="sparkles" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">AI that uses your inventory</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Describe a trip in plain English and get a full itinerary drafted from your own hotels and activities — not generic Wikipedia copy. Plus AI narratives, deal summaries, and email drafts that pull real context from your CRM.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="bar-chart-3" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Pipeline analytics</h3>
+
+        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="bar-chart-3" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Pipeline analytics</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Conversion rates by source, average deal size, team leaderboards, time-to-quote, and stage-by-stage drop-off. See what's working and where deals stall — with no spreadsheets and no pivot tables.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="zap" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Automations &amp; integrations</h3>
+
+        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="zap" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Automations &amp; integrations</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Auto-assign leads by source or destination, nudge stale deals, flag overdue tasks. Outbound webhooks and an API key for Zapier, n8n, Make, or your own tooling. Accounting webhooks for QuickBooks and Xero on Pro and above.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="bell" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">WhatsApp &amp; email reminders</h3>
+
+        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="bell" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">WhatsApp &amp; email reminders</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Assigned tasks, deal handoffs, overdue alerts, and quote-follow-up nudges go straight to your team — via WhatsApp on Pro and above, email on every plan. Operators get pinged on the channel they actually live in.</p>
         </div>
       </div>
@@ -211,38 +239,51 @@
   <section class="py-12 md:py-16 px-6">
     <div class="max-w-6xl mx-auto">
       <div class="max-w-2xl mb-12">
-        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">Brand &amp; trust</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight font-serif">Look like the operator you are</h2>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Brand &amp; trust</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Look like the operator you are</h2>
         <p class="text-sm text-gray-600 mt-3 leading-relaxed">How clients perceive your business when they get a proposal.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="palette" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Your brand, everywhere</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="palette" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Your brand, everywhere</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Logo, colors, fonts, and cover quotes baked into every PDF and client-facing link. White-label on Business — no "powered by" footer. Your client never knows you're using SafiriPro.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4"><i data-lucide="shield-check" class="w-5 h-5 text-gray-600" stroke-width="1.5"></i></div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Secure client sharing</h3>
+
+        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
+          <div class="flex items-center gap-2.5 mb-2">
+            <i data-lucide="shield-check" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
+            <h3 class="text-base font-semibold text-gray-900">Secure client sharing</h3>
+          </div>
           <p class="text-sm text-gray-600 leading-relaxed">Send quotes as branded links with view tracking, optional password protection, and expiry dates. Get notified the moment they're opened or accepted. No more wondering whether the email landed.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ CTA ═══════════════════ -->
-  <section class="py-14 md:py-20 px-6 bg-cream">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight font-serif">Try it on your own quotes</h2>
-      <p class="text-sm text-gray-600 mt-4 max-w-lg mx-auto">14-day free trial. No credit card. Set up takes under 5 minutes.</p>
-      <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
-        <a href="https://app.safiripro.com/register" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand text-white text-sm font-semibold rounded-lg hover:bg-brand-dark transition-colors">
-          Start for free <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-        <a href="pricing.html" class="inline-flex items-center gap-2 px-6 py-3.5 text-gray-700 text-sm font-medium border border-gray-200 rounded-lg hover:border-gray-300 hover:bg-white transition-colors">
-          See pricing
-        </a>
+  <!-- ═══════════════════ FINAL CTA (dark brand-ink) ═══════════════════ -->
+  <section class="py-14 md:py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="relative bg-brand-ink rounded-3xl overflow-hidden p-10 md:p-16">
+        <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full border border-white/10 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute -bottom-32 -left-16 w-80 h-80 rounded-full border border-white/8 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-brand pointer-events-none" aria-hidden="true"></div>
+
+        <div class="relative max-w-2xl">
+          <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.05]">Try it on your own quotes.</h2>
+          <p class="text-base md:text-lg text-gray-300 mt-5 max-w-lg leading-relaxed">14-day free trial. No credit card. Set up takes less than 5 minutes.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="https://app.safiripro.com/register" class="group inline-flex items-center gap-2.5 px-7 py-4 bg-brand text-white text-base font-semibold rounded-xl shadow-lg shadow-brand/40 hover:bg-brand-dark transition-all">
+              Start for free <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="pricing.html" class="inline-flex items-center gap-2 px-6 py-4 text-white text-sm font-medium border border-white/20 rounded-xl hover:bg-white/5 transition-colors">
+              See pricing
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

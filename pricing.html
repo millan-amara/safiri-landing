@@ -6,7 +6,7 @@
   <title>Pricing — SafiriPro</title>
   <meta name="description" content="Simple monthly pricing for safari and travel operators. Plans from KES 2,500/month with a 14-day free trial. No credit card required. Cancel anytime." />
   <meta name="author" content="Peskaya Limited" />
-  <meta name="theme-color" content="#111827" />
+  <meta name="theme-color" content="#5048E5" />
 
   <link rel="canonical" href="https://safiripro.com/pricing.html" />
 
@@ -20,6 +20,7 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="SafiriPro — run your safari business from one platform. Start free for 14 days." />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pricing — SafiriPro" />
@@ -62,7 +63,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -74,6 +75,7 @@
               DEFAULT: '#5048E5',
               dark: '#3F37C0',
               tint: '#EEF0FF',
+              ink: '#1B1740',
             },
             cream: {
               DEFAULT: '#F4F0E6',
@@ -95,7 +97,7 @@
     html { scroll-behavior: smooth; }
   </style>
 </head>
-<body class="antialiased bg-white text-gray-900">
+<body class="antialiased bg-white text-gray-900 selection:bg-brand selection:text-white">
 
   <!-- ═══════════════════ NAV ═══════════════════ -->
   <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
@@ -137,10 +139,10 @@
   <!-- ═══════════════════ HERO ═══════════════════ -->
   <section class="pt-28 pb-12 md:pt-32 md:pb-16 px-6">
     <div class="max-w-3xl mx-auto text-center">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-4">Pricing</p>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.08] tracking-tight font-serif">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand mb-4">Pricing</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.05] tracking-[-0.025em]">
         Simple pricing,<br class="hidden sm:block" />
-        <span class="text-gray-400">no surprises</span>
+        <span class="italic font-semibold text-brand">no surprises.</span>
       </h1>
       <p class="text-lg text-gray-600 mt-6 leading-relaxed">
         Every plan starts with a 14-day free trial. No credit card required. Pay annually and get two months free.
@@ -158,7 +160,7 @@
           <p class="text-sm font-semibold text-gray-900">Starter</p>
           <p class="text-xs mt-1 text-gray-500">For one- or two-person operations.</p>
           <div class="mt-5 mb-6">
-            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">KES 2,500</span>
+            <span class="text-3xl font-bold tracking-tight text-gray-900">KES 2,500</span>
             <span class="text-sm text-gray-500"> / month</span>
           </div>
           <ul class="space-y-2.5 mb-8 flex-1">
@@ -172,13 +174,13 @@
           <a href="https://app.safiripro.com/register" class="block text-center py-2.5 rounded-lg text-sm font-medium bg-white border border-gray-300 text-gray-900 hover:border-gray-900 hover:bg-gray-50 transition-colors">Start free trial</a>
         </div>
 
-        <!-- Pro -->
-        <div class="bg-gray-900 text-white border-2 border-gray-900 rounded-xl p-6 relative flex flex-col">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-brand text-white text-[10px] font-bold uppercase tracking-wider rounded-full">Most popular</div>
+        <!-- Pro (highlighted, brand-ink) -->
+        <div class="bg-brand-ink text-white border-2 border-brand-ink rounded-xl p-6 relative flex flex-col shadow-2xl shadow-brand/20">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-brand text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full">Most popular</div>
           <p class="text-sm font-semibold text-white">Pro</p>
           <p class="text-xs mt-1 text-gray-400">For growing safari businesses.</p>
           <div class="mt-5 mb-6">
-            <span class="text-3xl font-bold tracking-tight text-white font-serif">KES 7,500</span>
+            <span class="text-3xl font-bold tracking-tight text-white">KES 7,500</span>
             <span class="text-sm text-gray-400"> / month</span>
           </div>
           <ul class="space-y-2.5 mb-8 flex-1">
@@ -198,7 +200,7 @@
           <p class="text-sm font-semibold text-gray-900">Business</p>
           <p class="text-xs mt-1 text-gray-500">For established operators.</p>
           <div class="mt-5 mb-6">
-            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">KES 18,000</span>
+            <span class="text-3xl font-bold tracking-tight text-gray-900">KES 18,000</span>
             <span class="text-sm text-gray-500"> / month</span>
           </div>
           <ul class="space-y-2.5 mb-8 flex-1">
@@ -218,7 +220,7 @@
           <p class="text-sm font-semibold text-gray-900">Enterprise</p>
           <p class="text-xs mt-1 text-gray-500">For DMCs and multi-country operators.</p>
           <div class="mt-5 mb-6">
-            <span class="text-3xl font-bold tracking-tight text-gray-900 font-serif">Custom</span>
+            <span class="text-3xl font-bold tracking-tight text-gray-900">Custom</span>
             <span class="block text-xs text-gray-500 mt-1">from KES 50,000 / month</span>
           </div>
           <ul class="space-y-2.5 mb-8 flex-1">
@@ -229,7 +231,7 @@
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Dedicated CSM &amp; SLA</li>
             <li class="text-sm flex items-start gap-2.5 text-gray-600"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-gray-400"></i>Negotiated annual terms</li>
           </ul>
-          <a href="mailto:hello@safiripro.com" class="block text-center py-2.5 rounded-lg text-sm font-medium bg-gray-900 text-white hover:bg-gray-800 transition-colors">Talk to sales</a>
+          <a href="mailto:hello@safiripro.com" class="block text-center py-2.5 rounded-lg text-sm font-medium bg-brand-ink text-white hover:bg-gray-900 transition-colors">Talk to sales</a>
         </div>
 
       </div>
@@ -239,8 +241,8 @@
   <!-- ═══════════════════ AI CREDITS DETAIL ═══════════════════ -->
   <section class="py-12 md:py-16 px-6 bg-cream">
     <div class="max-w-3xl mx-auto">
-      <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">AI credits</p>
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight font-serif">How AI credits work</h2>
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">AI credits</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">How AI credits work</h2>
       <p class="text-sm text-gray-600 mt-3 leading-relaxed">SafiriPro's AI features are metered so heavy users pay for what they use, and light users don't subsidize them. Most operators never run out.</p>
 
       <div class="mt-8 bg-white border border-gray-200 rounded-xl divide-y divide-gray-100">
@@ -278,75 +280,83 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ PRICING FAQ ═══════════════════ -->
+  <!-- ═══════════════════ PRICING FAQ (divider style) ═══════════════════ -->
   <section class="py-12 md:py-16 px-6">
     <div class="max-w-3xl mx-auto">
       <div class="text-center max-w-xl mx-auto mb-10">
-        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">Billing FAQ</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight font-serif">Common pricing questions</h2>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Billing FAQ</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Common pricing questions</h2>
       </div>
 
-      <div class="space-y-3">
-        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-            <span class="text-base font-semibold text-gray-900">Can I change plans later?</span>
-            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
-            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+      <div class="divide-y divide-gray-200 border-t border-b border-gray-200">
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4 py-5 group-hover:text-brand transition-colors">
+            <span class="text-base font-semibold text-gray-900 group-hover:text-brand transition-colors">Can I change plans later?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-gray-400 mt-0.5 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-brand mt-0.5 shrink-0 hidden group-open:block"></i>
           </summary>
-          <p class="text-sm text-gray-600 leading-relaxed mt-3">Yes, anytime. Upgrades take effect immediately and you're charged the prorated difference. Downgrades take effect at the next billing cycle so you keep what you paid for. Your data, contacts, quotes, and supplier records all stay in place across plan changes.</p>
+          <p class="text-sm text-gray-600 leading-relaxed pb-5 pr-8">Yes, anytime. Upgrades take effect immediately and you're charged the prorated difference. Downgrades take effect at the next billing cycle so you keep what you paid for. Your data, contacts, quotes, and supplier records all stay in place across plan changes.</p>
         </details>
 
-        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-            <span class="text-base font-semibold text-gray-900">What's the difference between monthly and annual billing?</span>
-            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
-            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4 py-5 group-hover:text-brand transition-colors">
+            <span class="text-base font-semibold text-gray-900 group-hover:text-brand transition-colors">What's the difference between monthly and annual billing?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-gray-400 mt-0.5 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-brand mt-0.5 shrink-0 hidden group-open:block"></i>
           </summary>
-          <p class="text-sm text-gray-600 leading-relaxed mt-3">Annual plans give you two months free — you pay for ten months and get twelve. They're billed once at the start of the year. Monthly plans renew on the same day each month. Both can be cancelled at any time and stay active until the end of the period you've already paid for.</p>
+          <p class="text-sm text-gray-600 leading-relaxed pb-5 pr-8">Annual plans give you two months free — you pay for ten months and get twelve. They're billed once at the start of the year. Monthly plans renew on the same day each month. Both can be cancelled at any time and stay active until the end of the period you've already paid for.</p>
         </details>
 
-        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-            <span class="text-base font-semibold text-gray-900">What happens at the end of my free trial?</span>
-            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
-            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4 py-5 group-hover:text-brand transition-colors">
+            <span class="text-base font-semibold text-gray-900 group-hover:text-brand transition-colors">What happens at the end of my free trial?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-gray-400 mt-0.5 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-brand mt-0.5 shrink-0 hidden group-open:block"></i>
           </summary>
-          <p class="text-sm text-gray-600 leading-relaxed mt-3">Your workspace becomes read-only until you choose a plan — you can still see all your contacts, quotes, and suppliers, but you can't create new ones. Pick a plan from the Billing page and everything resumes immediately. Nothing is deleted, even if you wait weeks to upgrade.</p>
+          <p class="text-sm text-gray-600 leading-relaxed pb-5 pr-8">Your workspace becomes read-only until you choose a plan — you can still see all your contacts, quotes, and suppliers, but you can't create new ones. Pick a plan from the Billing page and everything resumes immediately. Nothing is deleted, even if you wait weeks to upgrade.</p>
         </details>
 
-        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-            <span class="text-base font-semibold text-gray-900">Do you offer refunds?</span>
-            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
-            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4 py-5 group-hover:text-brand transition-colors">
+            <span class="text-base font-semibold text-gray-900 group-hover:text-brand transition-colors">Do you offer refunds?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-gray-400 mt-0.5 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-brand mt-0.5 shrink-0 hidden group-open:block"></i>
           </summary>
-          <p class="text-sm text-gray-600 leading-relaxed mt-3">If something goes wrong and you contact us within 14 days of a charge, we'll refund it — no questions, no friction. After that, plans run to the end of the period you've paid for and don't auto-renew if you cancel. Annual plans are pro-rated on request for the months you didn't use.</p>
+          <p class="text-sm text-gray-600 leading-relaxed pb-5 pr-8">If something goes wrong and you contact us within 14 days of a charge, we'll refund it — no questions, no friction. After that, plans run to the end of the period you've paid for and don't auto-renew if you cancel. Annual plans are pro-rated on request for the months you didn't use.</p>
         </details>
 
-        <details class="group bg-white border border-gray-200 rounded-xl px-5 py-4 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-            <span class="text-base font-semibold text-gray-900">Which payment methods do you accept?</span>
-            <i data-lucide="plus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 group-open:hidden"></i>
-            <i data-lucide="minus" class="w-4 h-4 text-gray-400 mt-1 shrink-0 hidden group-open:block"></i>
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4 py-5 group-hover:text-brand transition-colors">
+            <span class="text-base font-semibold text-gray-900 group-hover:text-brand transition-colors">Which payment methods do you accept?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-gray-400 mt-0.5 shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-brand mt-0.5 shrink-0 hidden group-open:block"></i>
           </summary>
-          <p class="text-sm text-gray-600 leading-relaxed mt-3">SafiriPro is billed in KES via Paystack — Visa, Mastercard, and M-Pesa are supported. Enterprise customers can request invoice billing with bank transfer. (Your <em>clients</em> can pay you in any currency, with your own bank or M-Pesa details on the invoice — that's separate from how you pay us.)</p>
+          <p class="text-sm text-gray-600 leading-relaxed pb-5 pr-8">SafiriPro is billed in KES via Paystack — Visa, Mastercard, and M-Pesa are supported. Enterprise customers can request invoice billing with bank transfer. (Your <em>clients</em> can pay you in any currency, with your own bank or M-Pesa details on the invoice — that's separate from how you pay us.)</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ FINAL CTA ═══════════════════ -->
-  <section class="py-14 md:py-20 px-6 bg-cream">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight font-serif">Try it free for 14 days</h2>
-      <p class="text-sm text-gray-600 mt-4 max-w-lg mx-auto">No credit card required. Set up takes less than 5 minutes.</p>
-      <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
-        <a href="https://app.safiripro.com/register" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand text-white text-sm font-semibold rounded-lg hover:bg-brand-dark transition-colors">
-          Start for free <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-        <a href="mailto:hello@safiripro.com" class="inline-flex items-center gap-2 px-6 py-3.5 text-gray-700 text-sm font-medium border border-gray-200 rounded-lg hover:border-gray-300 hover:bg-white transition-colors">
-          <i data-lucide="phone" class="w-4 h-4"></i> Talk to sales
-        </a>
+  <!-- ═══════════════════ FINAL CTA (dark brand-ink) ═══════════════════ -->
+  <section class="py-14 md:py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="relative bg-brand-ink rounded-3xl overflow-hidden p-10 md:p-16">
+        <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full border border-white/10 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute -bottom-32 -left-16 w-80 h-80 rounded-full border border-white/8 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-brand pointer-events-none" aria-hidden="true"></div>
+
+        <div class="relative max-w-2xl">
+          <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.05]">Try it free for 14 days.</h2>
+          <p class="text-base md:text-lg text-gray-300 mt-5 max-w-lg leading-relaxed">No credit card required. Set up takes less than 5 minutes.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="https://app.safiripro.com/register" class="group inline-flex items-center gap-2.5 px-7 py-4 bg-brand text-white text-base font-semibold rounded-xl shadow-lg shadow-brand/40 hover:bg-brand-dark transition-all">
+              Start for free <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="mailto:hello@safiripro.com" class="inline-flex items-center gap-2 px-6 py-4 text-white text-sm font-medium border border-white/20 rounded-xl hover:bg-white/5 transition-colors">
+              <i data-lucide="phone" class="w-4 h-4"></i> Talk to sales
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
