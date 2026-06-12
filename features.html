@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Features — SafiriPro</title>
-  <meta name="description" content="Trip-quote builder, travel-CRM, supplier catalog, AI itinerary drafting, hotel vouchers, invoicing, and more — every feature in SafiriPro, built for safari and travel operators." />
+  <title>Features · SafiriPro</title>
+  <meta name="description" content="The AI quoting engine, rate intelligence, travel CRM, supplier catalog, hotel vouchers, invoicing, and more. Every feature in SafiriPro, built for safari and travel operators." />
   <meta name="author" content="Peskaya Limited" />
-  <meta name="theme-color" content="#5048E5" />
+  <meta name="theme-color" content="#0E0D12" />
 
   <link rel="canonical" href="https://safiripro.com/features.html" />
 
-  <meta property="og:title" content="Features — SafiriPro" />
-  <meta property="og:description" content="Trip-quote builder, travel-CRM, supplier catalog, AI itinerary drafting, hotel vouchers, invoicing, and more — every feature in SafiriPro." />
+  <meta property="og:title" content="Features · SafiriPro" />
+  <meta property="og:description" content="The AI quoting engine, rate intelligence, travel CRM, supplier catalog, hotel vouchers, invoicing, and more. Every feature in SafiriPro." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://safiripro.com/features.html" />
   <meta property="og:site_name" content="SafiriPro" />
@@ -20,11 +20,11 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="SafiriPro — run your safari business from one platform. Start free for 14 days." />
+  <meta property="og:image:alt" content="SafiriPro: quote complex safari leads in minutes. Start free for 14 days." />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Features — SafiriPro" />
-  <meta name="twitter:description" content="Every feature in SafiriPro: quotes, CRM, supplier catalog, AI itineraries, vouchers, invoicing, and more." />
+  <meta name="twitter:title" content="Features · SafiriPro" />
+  <meta name="twitter:description" content="Every feature in SafiriPro: the quoting engine, rate intelligence, CRM, supplier catalog, vouchers, invoicing, and more." />
   <meta name="twitter:image" content="https://safiripro.com/images/og-card.png" />
 
   <link rel="icon" type="image/png" href="images/safiri_logo.png" />
@@ -43,7 +43,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -51,20 +51,27 @@
       theme: {
         extend: {
           colors: {
+            ink: {
+              DEFAULT: '#0E0D12',
+              raise: '#15141B',
+            },
+            porcelain: {
+              DEFAULT: '#F6F4EF',
+              deep: '#EFECE4',
+            },
             brand: {
-              DEFAULT: '#5048E5',
-              dark: '#3F37C0',
-              tint: '#EEF0FF',
-              ink: '#1B1740',
+              DEFAULT: '#4B3FF2',
+              bright: '#7A70FF',
+              dark: '#372ECC',
+              tint: '#EDEBFF',
             },
-            cream: {
-              DEFAULT: '#F4F0E6',
-              soft: '#FAF7F0',
-            },
+            gold: { DEFAULT: '#C98A2E', soft: '#E8B65C' },
+            moss: { DEFAULT: '#168A5B', soft: '#2BC489' },
           },
           fontFamily: {
-            sans: ['Inter Tight', 'system-ui', '-apple-system', 'sans-serif'],
-            serif: ['Inter Tight', 'system-ui', '-apple-system', 'sans-serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['Instrument Serif', 'Georgia', 'serif'],
+            mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'],
           },
         },
       },
@@ -75,6 +82,7 @@
 
   <style>
     html { scroll-behavior: smooth; }
+    body { font-feature-settings: 'cv11', 'ss01'; }
 
     /* Mobile menu slide-down */
     @media (max-width: 767.98px) {
@@ -85,28 +93,46 @@
       }
       #mobile-nav.open { max-height: 400px; }
     }
+
+    /* Scroll-triggered reveal */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* Dark header background: fine grid + indigo bloom */
+    .hero-field {
+      background-image:
+        radial-gradient(ellipse 80% 70% at 50% -10%, rgba(75, 63, 242, 0.22), transparent 65%),
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+    }
   </style>
 </head>
-<body class="antialiased bg-white text-gray-900 selection:bg-brand selection:text-white">
+<body class="antialiased bg-porcelain text-ink selection:bg-brand selection:text-white font-sans">
 
   <!-- ═══════════════════ NAV ═══════════════════ -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink/85 backdrop-blur-xl border-b border-white/[0.07]">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2">
+      <a href="index.html" class="flex items-center gap-2.5">
         <img src="images/safiri_logo.png" alt="SafiriPro" class="h-8 w-auto object-contain" />
-        <span class="text-base font-bold text-gray-900 tracking-tight">SafiriPro</span>
+        <span class="text-base font-bold text-white tracking-tight">SafiriPro</span>
       </a>
 
       <div class="hidden md:flex items-center gap-8">
-        <a href="features.html" class="text-sm text-brand font-medium transition-colors">Features</a>
-        <a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a>
-        <a href="pricing.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
-        <a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
+        <a href="index.html#engine" class="text-sm text-white/60 hover:text-white transition-colors">The engine</a>
+        <a href="features.html" class="text-sm text-white font-medium transition-colors">Features</a>
+        <a href="pricing.html" class="text-sm text-white/60 hover:text-white transition-colors">Pricing</a>
+        <a href="index.html#faq" class="text-sm text-white/60 hover:text-white transition-colors">FAQ</a>
       </div>
 
       <div class="hidden md:flex items-center gap-3">
-        <a href="https://app.safiripro.com/login" class="text-sm text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors">Sign in</a>
-        <a href="https://app.safiripro.com/register" class="text-sm font-medium bg-brand text-white px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">Get started</a>
+        <a href="https://app.safiripro.com/login" class="text-sm text-white/60 hover:text-white px-3 py-2 transition-colors">Sign in</a>
+        <a href="https://app.safiripro.com/register" class="text-sm font-semibold bg-white text-ink px-4 py-2 rounded-lg hover:bg-white/90 transition-colors">Try free</a>
       </div>
 
       <button
@@ -115,185 +141,230 @@
         aria-expanded="false"
         aria-controls="mobile-nav"
         data-mobile-toggle
-        class="md:hidden p-2 text-gray-600">
+        class="md:hidden p-2 text-white/70">
         <span class="menu-icon"><i data-lucide="menu" class="w-5 h-5"></i></span>
         <span class="x-icon hidden"><i data-lucide="x" class="w-5 h-5"></i></span>
       </button>
     </div>
 
     <div id="mobile-nav" class="md:hidden" aria-hidden="true">
-      <div class="bg-white border-t border-gray-100 px-6 py-4 space-y-3">
-        <a href="features.html" class="block text-sm text-brand font-medium py-2">Features</a>
-        <a href="index.html#how-it-works" class="block text-sm text-gray-600 py-2">How it works</a>
-        <a href="pricing.html" class="block text-sm text-gray-600 py-2">Pricing</a>
-        <a href="index.html#faq" class="block text-sm text-gray-600 py-2">FAQ</a>
-        <div class="pt-3 border-t border-gray-100 flex gap-3">
-          <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-gray-600 py-2.5 rounded-lg border border-gray-200">Sign in</a>
-          <a href="https://app.safiripro.com/register" class="flex-1 text-center text-sm font-medium bg-brand text-white py-2.5 rounded-lg">Get started</a>
+      <div class="bg-ink border-t border-white/[0.07] px-6 py-4 space-y-3">
+        <a href="index.html#engine" class="block text-sm text-white/70 py-2">The engine</a>
+        <a href="features.html" class="block text-sm text-white font-medium py-2">Features</a>
+        <a href="pricing.html" class="block text-sm text-white/70 py-2">Pricing</a>
+        <a href="index.html#faq" class="block text-sm text-white/70 py-2">FAQ</a>
+        <div class="pt-3 border-t border-white/[0.07] flex gap-3">
+          <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-white/80 py-2.5 rounded-lg border border-white/15">Sign in</a>
+          <a href="https://app.safiripro.com/register" class="flex-1 text-center text-sm font-semibold bg-white text-ink py-2.5 rounded-lg">Try free</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- ═══════════════════ HERO ═══════════════════ -->
-  <section class="pt-28 pb-12 md:pt-32 md:pb-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand mb-4">Features</p>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.05] tracking-[-0.025em]">
-        Everything in <span class="italic font-semibold text-brand">SafiriPro.</span>
+  <!-- ═══════════════════ PAGE HEADER ═══════════════════ -->
+  <header class="relative bg-ink text-white overflow-hidden">
+    <div class="absolute inset-0 hero-field pointer-events-none" aria-hidden="true"></div>
+    <div class="relative max-w-4xl mx-auto px-6 pt-32 md:pt-40 pb-16 md:pb-20 text-center">
+      <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-white/50">Features</p>
+      <h1 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight">
+        Everything in <span class="font-serif italic font-normal text-gold-soft">SafiriPro</span>.
       </h1>
-      <p class="text-lg text-gray-600 mt-6 max-w-2xl mx-auto leading-relaxed">
-        Twelve features that replace the spreadsheets, Word docs, and copy-pasted emails — built for the way safari and travel operators actually work.
+      <p class="text-base md:text-lg text-white/60 mt-6 max-w-2xl mx-auto leading-relaxed">
+        The quoting engine up front, the operational core behind it. Built to replace the spreadsheets, Word docs, and copy-pasted emails that run most safari businesses today.
       </p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ THE QUOTING ENGINE ═══════════════════ -->
+  <section class="py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-brand mb-4">The quoting engine</p>
+        <h2 class="text-2xl md:text-4xl font-bold tracking-tight leading-[1.1]">The hard part of the job, <span class="font-serif italic font-normal">handled</span>.</h2>
+        <p class="text-sm md:text-base text-ink/60 mt-4 leading-relaxed">This is the core of SafiriPro: turning a messy lead into costed, ranked options using your own contracted rates.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="message-square-text" class="w-5 h-5 text-brand"></i>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold">Natural-language lead intake</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Paste the inquiry the way it arrived: party size, ages, destinations, dates, must-have activities, budget. No forms with forty fields. The engine extracts the brief and gets to work on your rates.</p>
+        </div>
+
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.05s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="brain" class="w-5 h-5 text-brand"></i>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold">Rate intelligence</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Child policies by age band, seasonal rates, single supplements, triple reductions, resident and non-resident sheets, meal plans, park fees, transfer legs. Every pricing rule in your contracts is modeled and applied automatically, per traveller, per night.</p>
+        </div>
+
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.1s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="list-ordered" class="w-5 h-5 text-brand"></i>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold">Ranked quote options</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Get fully costed combinations scored against the client's budget: the best fit, the best margin, and the upsell worth presenting. Each option shows its working, so you can defend every number.</p>
+        </div>
+
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.15s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="percent" class="w-5 h-5 text-brand"></i>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold">Margin protection</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Markup rules per supplier or per quote. See net, sell, and margin on every option before the client sees a price, so discounting decisions are made with open eyes.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ═══════════════════ RUN YOUR BUSINESS ═══════════════════ -->
-  <section class="py-12 md:py-16 px-6">
+  <section class="py-16 md:py-24 px-6 bg-white border-y border-ink/[0.06]">
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-2xl mb-12">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Run your business</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">The operational core</h2>
-        <p class="text-sm text-gray-600 mt-3 leading-relaxed">Everything you do every day — from the first inquiry to the final voucher.</p>
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-brand mb-4">Run your business</p>
+        <h2 class="text-2xl md:text-4xl font-bold tracking-tight leading-[1.1]">The operational core</h2>
+        <p class="text-sm md:text-base text-ink/60 mt-4 leading-relaxed">Everything you do every day, from the first inquiry to the final voucher.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="file-text" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Beautiful trip quotes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-6">
+          <div class="w-10 h-10 rounded-lg bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="file-text" class="w-[18px] h-[18px] text-brand" stroke-width="2"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Build branded PDF and shareable-link proposals with day-by-day itineraries, live pricing, and multiple cover layouts. Track when clients open them, how long they spend on each page, and get notified the moment they accept.</p>
+          <h3 class="mt-4 text-[15px] font-semibold">Beautiful trip proposals</h3>
+          <p class="mt-1.5 text-[13px] text-ink/55 leading-relaxed">Branded PDF and shareable-link proposals with day-by-day itineraries, live pricing, and multiple cover layouts. Track when clients open them and get notified the moment they accept.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="users" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">CRM built for travel</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-6" style="transition-delay:.05s">
+          <div class="w-10 h-10 rounded-lg bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="users" class="w-[18px] h-[18px] text-brand" stroke-width="2"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Contacts, deals, tasks, and custom pipelines with trip-specific fields operators actually use — destination, traveler count, departure window, deposit status. Track every inquiry from first message to booking.</p>
+          <h3 class="mt-4 text-[15px] font-semibold">CRM built for travel</h3>
+          <p class="mt-1.5 text-[13px] text-ink/55 leading-relaxed">Contacts, deals, tasks, and custom pipelines with the trip-specific fields operators actually use: destination, traveller count, departure window, deposit status. Every inquiry tracked from first message to booking.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="layers" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Your supplier catalog</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-6" style="transition-delay:.1s">
+          <div class="w-10 h-10 rounded-lg bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="layers" class="w-[18px] h-[18px] text-brand" stroke-width="2"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Hotels, activities, destinations, transport — all in one place with rates, images, and meal plans. Update a rate once and every future quote uses it. No more spreadsheet drift or pricing errors mid-season.</p>
+          <h3 class="mt-4 text-[15px] font-semibold">Your supplier catalog</h3>
+          <p class="mt-1.5 text-[13px] text-ink/55 leading-relaxed">Hotels, activities, destinations, and transport in one place with rates, images, and meal plans. Update a rate once and every future quote uses it. No more spreadsheet drift mid-season.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="bed-double" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Hotel vouchers, ready to send</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-6" style="transition-delay:.15s">
+          <div class="w-10 h-10 rounded-lg bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="bed-double" class="w-[18px] h-[18px] text-brand" stroke-width="2"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Issue voucher PDFs your guests present at check-in. Auto-generated from an accepted quote — every lodge, dates, room type, and meal plan filled in. Email straight to the client and the lodge in one click.</p>
+          <h3 class="mt-4 text-[15px] font-semibold">Hotel vouchers, ready to send</h3>
+          <p class="mt-1.5 text-[13px] text-ink/55 leading-relaxed">Voucher PDFs your guests present at check-in, auto-generated from an accepted quote with every lodge, date, room type, and meal plan filled in. Email the client and the lodge in one click.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="receipt" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Invoices with deposit &amp; balance</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-6" style="transition-delay:.2s">
+          <div class="w-10 h-10 rounded-lg bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="receipt" class="w-[18px] h-[18px] text-brand" stroke-width="2"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Generate invoices in one click from accepted quotes, or split into deposit + balance pairs with travel-aware due dates. Email PDFs straight to clients with your bank or M-Pesa details. Track sent and paid status — no spreadsheet.</p>
+          <h3 class="mt-4 text-[15px] font-semibold">Deposit + balance invoicing</h3>
+          <p class="mt-1.5 text-[13px] text-ink/55 leading-relaxed">One-click invoices from accepted quotes, split into deposit and balance pairs with travel-aware due dates. Email PDFs with your bank or M-Pesa details and track sent and paid status.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="mail" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Email clients in your voice</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-6" style="transition-delay:.25s">
+          <div class="w-10 h-10 rounded-lg bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="mail" class="w-[18px] h-[18px] text-brand" stroke-width="2"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Pre-built templates for pre-arrival checklists, lodge confirmations, post-trip thank-yous, and quote follow-ups. Edit before sending. Your name, your brand — replies come back to your inbox, not ours.</p>
+          <h3 class="mt-4 text-[15px] font-semibold">Email clients in your voice</h3>
+          <p class="mt-1.5 text-[13px] text-ink/55 leading-relaxed">Pre-built templates for pre-arrival checklists, lodge confirmations, post-trip thank-yous, and quote follow-ups. Your name, your brand, and replies come back to your inbox, not ours.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════ WIN MORE BOOKINGS ═══════════════════ -->
-  <section class="py-12 md:py-16 px-6 bg-cream">
+  <section class="py-16 md:py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-2xl mb-12">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Win more bookings</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Tools that compound</h2>
-        <p class="text-sm text-gray-600 mt-3 leading-relaxed">The leverage that turns a busy operator into a high-conversion one.</p>
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-brand mb-4">Win more bookings</p>
+        <h2 class="text-2xl md:text-4xl font-bold tracking-tight leading-[1.1]">Tools that compound</h2>
+        <p class="text-sm md:text-base text-ink/60 mt-4 leading-relaxed">The leverage that turns a busy operator into a high-conversion one.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="sparkles" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">AI that uses your inventory</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-5 h-5 text-brand"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Describe a trip in plain English and get a full itinerary drafted from your own hotels and activities — not generic Wikipedia copy. Plus AI narratives, deal summaries, and email drafts that pull real context from your CRM.</p>
+          <h3 class="mt-4 text-lg font-semibold">AI that uses your inventory</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Describe a trip in plain English and get a full itinerary drafted from your own hotels and activities, not generic Wikipedia copy. Plus AI narratives, deal summaries, and email drafts that pull real context from your CRM.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="bar-chart-3" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Pipeline analytics</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.05s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="bar-chart-3" class="w-5 h-5 text-brand"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Conversion rates by source, average deal size, team leaderboards, time-to-quote, and stage-by-stage drop-off. See what's working and where deals stall — with no spreadsheets and no pivot tables.</p>
+          <h3 class="mt-4 text-lg font-semibold">Pipeline analytics</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Conversion rates by source, average deal size, team leaderboards, time-to-quote, and stage-by-stage drop-off. See what's working and where deals stall, with no pivot tables in sight.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="zap" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Automations &amp; integrations</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.1s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="zap" class="w-5 h-5 text-brand"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Auto-assign leads by source or destination, nudge stale deals, flag overdue tasks. Outbound webhooks and an API key for Zapier, n8n, Make, or your own tooling. Accounting webhooks for QuickBooks and Xero on Pro and above.</p>
+          <h3 class="mt-4 text-lg font-semibold">Automations &amp; integrations</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Auto-assign leads by source or destination, nudge stale deals, flag overdue tasks. Outbound webhooks and an API key for Zapier, n8n, Make, or your own tooling. Accounting webhooks for QuickBooks and Xero on Pro and above.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/20 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="bell" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">WhatsApp &amp; email reminders</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.15s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center">
+            <i data-lucide="bell" class="w-5 h-5 text-brand"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Assigned tasks, deal handoffs, overdue alerts, and quote-follow-up nudges go straight to your team — via WhatsApp on Pro and above, email on every plan. Operators get pinged on the channel they actually live in.</p>
+          <h3 class="mt-4 text-lg font-semibold">WhatsApp &amp; email reminders</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Assigned tasks, deal handoffs, overdue alerts, and quote follow-up nudges go straight to your team. WhatsApp on Pro and above, email on every plan. Operators get pinged on the channel they actually live in.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════ BRAND & TRUST ═══════════════════ -->
-  <section class="py-12 md:py-16 px-6">
+  <section class="py-16 md:py-24 px-6 bg-white border-t border-ink/[0.06]">
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-2xl mb-12">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Brand &amp; trust</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Look like the operator you are</h2>
-        <p class="text-sm text-gray-600 mt-3 leading-relaxed">How clients perceive your business when they get a proposal.</p>
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-brand mb-4">Brand &amp; trust</p>
+        <h2 class="text-2xl md:text-4xl font-bold tracking-tight leading-[1.1]">Look like the operator you are</h2>
+        <p class="text-sm md:text-base text-ink/60 mt-4 leading-relaxed">How clients perceive your business when the proposal lands.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="palette" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Your brand, everywhere</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-7">
+          <div class="w-11 h-11 rounded-xl bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="palette" class="w-5 h-5 text-brand"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Logo, colors, fonts, and cover quotes baked into every PDF and client-facing link. White-label on Business — no "powered by" footer. Your client never knows you're using SafiriPro.</p>
+          <h3 class="mt-4 text-lg font-semibold">Your brand, everywhere</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Logo, colors, fonts, and cover quotes baked into every PDF and client-facing link. White-label on Business, with no "powered by" footer. Your client never knows you're using SafiriPro.</p>
         </div>
 
-        <div class="group border-l-2 border-brand/15 hover:border-brand pl-6 transition-colors">
-          <div class="flex items-center gap-2.5 mb-2">
-            <i data-lucide="shield-check" class="w-4 h-4 text-brand" stroke-width="2.25"></i>
-            <h3 class="text-base font-semibold text-gray-900">Secure client sharing</h3>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-porcelain p-7" style="transition-delay:.05s">
+          <div class="w-11 h-11 rounded-xl bg-white border border-ink/[0.06] flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-5 h-5 text-brand"></i>
           </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Send quotes as branded links with view tracking, optional password protection, and expiry dates. Get notified the moment they're opened or accepted. No more wondering whether the email landed.</p>
+          <h3 class="mt-4 text-lg font-semibold">Secure client sharing</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Send quotes as branded links with view tracking, optional password protection, and expiry dates. Get notified the moment they're opened or accepted. No more wondering whether the email landed.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ FINAL CTA (dark brand-ink) ═══════════════════ -->
-  <section class="py-14 md:py-24 px-6">
-    <div class="max-w-5xl mx-auto">
-      <div class="relative bg-brand-ink rounded-3xl overflow-hidden p-10 md:p-16">
-        <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full border border-white/10 pointer-events-none" aria-hidden="true"></div>
-        <div class="absolute -bottom-32 -left-16 w-80 h-80 rounded-full border border-white/8 pointer-events-none" aria-hidden="true"></div>
-        <div class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-brand pointer-events-none" aria-hidden="true"></div>
+  <!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+  <section class="py-16 md:py-24 px-6">
+    <div class="max-w-5xl mx-auto reveal">
+      <div class="relative bg-ink rounded-3xl overflow-hidden p-10 md:p-16 text-white">
+        <div class="absolute inset-0 hero-field opacity-70 pointer-events-none" aria-hidden="true"></div>
 
         <div class="relative max-w-2xl">
-          <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.05]">Try it on your own quotes.</h2>
-          <p class="text-base md:text-lg text-gray-300 mt-5 max-w-lg leading-relaxed">14-day free trial. No credit card. Set up takes less than 5 minutes.</p>
+          <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-brand-bright">Get started</p>
+          <h2 class="mt-4 text-3xl md:text-5xl font-bold tracking-tight leading-[1.05]">Try it on your own <span class="font-serif italic font-normal text-gold-soft">rates</span>.</h2>
+          <p class="text-base md:text-lg text-white/55 mt-5 max-w-lg leading-relaxed">14-day free trial. No credit card. Upload a rate sheet, paste a real inquiry, and see the options come back.</p>
           <div class="mt-8 flex flex-wrap items-center gap-4">
             <a href="https://app.safiripro.com/register" class="group inline-flex items-center gap-2.5 px-7 py-4 bg-brand text-white text-base font-semibold rounded-xl shadow-lg shadow-brand/40 hover:bg-brand-dark transition-all">
               Start for free <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
@@ -308,50 +379,51 @@
   </section>
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
-  <footer class="border-t border-gray-100 py-10 px-6 bg-white">
+  <footer class="border-t border-ink/[0.07] py-12 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 mb-8">
         <div class="col-span-2 md:col-span-1">
           <div class="flex items-center gap-2 mb-3">
             <img src="images/safiri_logo.png" alt="SafiriPro" class="w-6 h-6 object-contain" />
-            <span class="text-base font-bold text-gray-900">SafiriPro</span>
+            <span class="text-base font-bold">SafiriPro</span>
           </div>
-          <p class="text-xs text-gray-600 leading-relaxed max-w-xs">The operating system for safari and travel businesses. Built for operators across Africa.</p>
-          <p class="text-[11px] text-gray-500 mt-2">A product of <span class="font-semibold text-gray-700">Peskaya Limited.</span></p>
+          <p class="text-xs text-ink/60 leading-relaxed max-w-xs">The quoting brain and operations system for safari and travel businesses. Built in Nairobi for operators across Africa.</p>
+          <p class="text-[11px] text-ink/45 mt-2">A product of <span class="font-semibold text-ink/70">Peskaya Limited.</span></p>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Product</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Product</p>
           <ul class="space-y-2">
-            <li><a href="features.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a></li>
-            <li><a href="pricing.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</a></li>
-            <li><a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a></li>
-            <li><a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a></li>
+            <li><a href="index.html#engine" class="text-sm text-ink/60 hover:text-ink transition-colors">How it works</a></li>
+            <li><a href="features.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Features</a></li>
+            <li><a href="pricing.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Pricing</a></li>
+            <li><a href="index.html#faq" class="text-sm text-ink/60 hover:text-ink transition-colors">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Company</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Company</p>
           <ul class="space-y-2">
-            <li><a href="about.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About</a></li>
-            <li><a href="mailto:hello@safiripro.com" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a></li>
+            <li><a href="about.html" class="text-sm text-ink/60 hover:text-ink transition-colors">About</a></li>
+            <li><a href="mailto:hello@safiripro.com" class="text-sm text-ink/60 hover:text-ink transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Legal</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Legal</p>
           <ul class="space-y-2">
-            <li><a href="privacy.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Privacy</a></li>
-            <li><a href="terms.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms</a></li>
-            <li><a href="security.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Security</a></li>
+            <li><a href="privacy.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Privacy</a></li>
+            <li><a href="terms.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Terms</a></li>
+            <li><a href="security.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Security</a></li>
           </ul>
         </div>
       </div>
-      <div class="pt-6 border-t border-gray-100">
-        <p class="text-xs text-gray-500">&copy; 2026 SafiriPro. All rights reserved.</p>
+      <div class="pt-6 border-t border-ink/[0.07]">
+        <p class="text-xs text-ink/45">&copy; 2026 SafiriPro. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
+
     function toggleNav(open) {
       const nav = document.getElementById('mobile-nav');
       const btn = document.querySelector('[data-mobile-toggle]');
@@ -367,6 +439,19 @@
     document.getElementById('mobile-nav')?.addEventListener('click', e => {
       if (e.target.closest('a')) toggleNav(false);
     });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('in'));
+    }
   </script>
 </body>
 </html>

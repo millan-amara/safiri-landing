@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — SafiriPro</title>
+  <title>Privacy Policy · SafiriPro</title>
   <meta name="description" content="How SafiriPro collects, uses, and protects your data and your clients' data." />
   <meta name="author" content="Peskaya Limited" />
-  <meta name="theme-color" content="#111827" />
+  <meta name="theme-color" content="#0E0D12" />
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://safiripro.com/privacy.html" />
 
-  <meta property="og:title" content="Privacy Policy — SafiriPro" />
+  <meta property="og:title" content="Privacy Policy · SafiriPro" />
   <meta property="og:description" content="How SafiriPro collects, uses, and protects your data and your clients' data." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://safiripro.com/privacy.html" />
@@ -21,10 +21,10 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="SafiriPro — run your safari business from one platform. Start free for 14 days." />
+  <meta property="og:image:alt" content="SafiriPro: quote complex safari leads in minutes. Start free for 14 days." />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Privacy Policy — SafiriPro" />
+  <meta name="twitter:title" content="Privacy Policy · SafiriPro" />
   <meta name="twitter:description" content="How SafiriPro collects, uses, and protects your data and your clients' data." />
   <meta name="twitter:image" content="https://safiripro.com/images/og-card.png" />
 
@@ -55,7 +55,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -63,19 +63,27 @@
       theme: {
         extend: {
           colors: {
+            ink: {
+              DEFAULT: '#0E0D12',
+              raise: '#15141B',
+            },
+            porcelain: {
+              DEFAULT: '#F6F4EF',
+              deep: '#EFECE4',
+            },
             brand: {
-              DEFAULT: '#5048E5',
-              dark: '#3F37C0',
-              tint: '#EEF0FF',
+              DEFAULT: '#4B3FF2',
+              bright: '#7A70FF',
+              dark: '#372ECC',
+              tint: '#EDEBFF',
             },
-            cream: {
-              DEFAULT: '#F4F0E6',
-              soft: '#FAF7F0',
-            },
+            gold: { DEFAULT: '#C98A2E', soft: '#E8B65C' },
+            moss: { DEFAULT: '#168A5B', soft: '#2BC489' },
           },
           fontFamily: {
-            sans: ['Inter Tight', 'system-ui', '-apple-system', 'sans-serif'],
-            serif: ['Inter Tight', 'system-ui', '-apple-system', 'sans-serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['Instrument Serif', 'Georgia', 'serif'],
+            mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'],
           },
         },
       },
@@ -86,6 +94,7 @@
 
   <style>
     html { scroll-behavior: smooth; }
+    body { font-feature-settings: 'cv11', 'ss01'; }
 
     /* Mobile menu slide-down */
     @media (max-width: 767.98px) {
@@ -97,36 +106,47 @@
       #mobile-nav.open { max-height: 400px; }
     }
 
-    .prose-custom h2 { font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
-    .prose-custom h3 { font-size: 1rem; font-weight: 600; color: #111827; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-    .prose-custom p { color: #4b5563; line-height: 1.75; margin-bottom: 1rem; font-size: 0.9375rem; }
-    .prose-custom ul { color: #4b5563; line-height: 1.75; margin-bottom: 1rem; font-size: 0.9375rem; padding-left: 1.25rem; list-style: disc; }
+    /* Dark header background: fine grid + indigo bloom */
+    .hero-field {
+      background-image:
+        radial-gradient(ellipse 80% 70% at 50% -10%, rgba(75, 63, 242, 0.22), transparent 65%),
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+    }
+
+    .prose-custom h2 { font-size: 1.5rem; font-weight: 700; color: #0E0D12; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
+    .prose-custom h3 { font-size: 1rem; font-weight: 600; color: #0E0D12; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    .prose-custom p { color: rgba(14, 13, 18, 0.62); line-height: 1.75; margin-bottom: 1rem; font-size: 0.9375rem; }
+    .prose-custom ul { color: rgba(14, 13, 18, 0.62); line-height: 1.75; margin-bottom: 1rem; font-size: 0.9375rem; padding-left: 1.25rem; list-style: disc; }
     .prose-custom ul li { margin-bottom: 0.5rem; }
-    .prose-custom a { color: #5048E5; text-decoration: underline; text-underline-offset: 2px; }
-    .prose-custom a:hover { color: #3F37C0; text-decoration: none; }
-    .prose-custom strong { color: #111827; font-weight: 600; }
+    .prose-custom a { color: #4B3FF2; text-decoration: underline; text-underline-offset: 2px; }
+    .prose-custom a:hover { color: #372ECC; text-decoration: none; }
+    .prose-custom strong { color: #0E0D12; font-weight: 600; }
   </style>
 </head>
-<body class="antialiased bg-white text-gray-900">
+<body class="antialiased bg-porcelain text-ink selection:bg-brand selection:text-white font-sans">
 
   <!-- ═══════════════════ NAV ═══════════════════ -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink/85 backdrop-blur-xl border-b border-white/[0.07]">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2">
+      <a href="index.html" class="flex items-center gap-2.5">
         <img src="images/safiri_logo.png" alt="SafiriPro" class="h-8 w-auto object-contain" />
-        <span class="text-base font-bold text-gray-900 tracking-tight">SafiriPro</span>
+        <span class="text-base font-bold text-white tracking-tight">SafiriPro</span>
       </a>
 
       <div class="hidden md:flex items-center gap-8">
-        <a href="features.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a>
-        <a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a>
-        <a href="pricing.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
-        <a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
+        <a href="index.html#engine" class="text-sm text-white/60 hover:text-white transition-colors">The engine</a>
+        <a href="features.html" class="text-sm text-white/60 hover:text-white transition-colors">Features</a>
+        <a href="pricing.html" class="text-sm text-white/60 hover:text-white transition-colors">Pricing</a>
+        <a href="index.html#faq" class="text-sm text-white/60 hover:text-white transition-colors">FAQ</a>
       </div>
 
       <div class="hidden md:flex items-center gap-3">
-        <a href="https://app.safiripro.com/login" class="text-sm text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors">Sign in</a>
-        <a href="https://app.safiripro.com/register" class="text-sm font-medium bg-brand text-white px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">Get started</a>
+        <a href="https://app.safiripro.com/login" class="text-sm text-white/60 hover:text-white px-3 py-2 transition-colors">Sign in</a>
+        <a href="https://app.safiripro.com/register" class="text-sm font-semibold bg-white text-ink px-4 py-2 rounded-lg hover:bg-white/90 transition-colors">Try free</a>
       </div>
 
       <button
@@ -135,37 +155,38 @@
         aria-expanded="false"
         aria-controls="mobile-nav"
         data-mobile-toggle
-        class="md:hidden p-2 text-gray-600">
+        class="md:hidden p-2 text-white/70">
         <span class="menu-icon"><i data-lucide="menu" class="w-5 h-5"></i></span>
         <span class="x-icon hidden"><i data-lucide="x" class="w-5 h-5"></i></span>
       </button>
     </div>
 
     <div id="mobile-nav" class="md:hidden" aria-hidden="true">
-      <div class="bg-white border-t border-gray-100 px-6 py-4 space-y-3">
-        <a href="features.html" class="block text-sm text-gray-600 py-2">Features</a>
-        <a href="index.html#how-it-works" class="block text-sm text-gray-600 py-2">How it works</a>
-        <a href="pricing.html" class="block text-sm text-gray-600 py-2">Pricing</a>
-        <a href="index.html#faq" class="block text-sm text-gray-600 py-2">FAQ</a>
-        <div class="pt-3 border-t border-gray-100 flex gap-3">
-          <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-gray-600 py-2.5 rounded-lg border border-gray-200">Sign in</a>
-          <a href="https://app.safiripro.com/register" class="flex-1 text-center text-sm font-medium bg-brand text-white py-2.5 rounded-lg">Get started</a>
+      <div class="bg-ink border-t border-white/[0.07] px-6 py-4 space-y-3">
+        <a href="index.html#engine" class="block text-sm text-white/70 py-2">The engine</a>
+        <a href="features.html" class="block text-sm text-white/70 py-2">Features</a>
+        <a href="pricing.html" class="block text-sm text-white/70 py-2">Pricing</a>
+        <a href="index.html#faq" class="block text-sm text-white/70 py-2">FAQ</a>
+        <div class="pt-3 border-t border-white/[0.07] flex gap-3">
+          <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-white/80 py-2.5 rounded-lg border border-white/15">Sign in</a>
+          <a href="https://app.safiripro.com/register" class="flex-1 text-center text-sm font-semibold bg-white text-ink py-2.5 rounded-lg">Try free</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- ═══════════════════ HERO ═══════════════════ -->
-  <section class="pt-28 pb-8 md:pt-32 md:pb-12 px-6">
-    <div class="max-w-3xl mx-auto">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-4">Legal</p>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tight">Privacy Policy</h1>
-      <p class="text-sm text-gray-500 mt-4">Last updated: 21 May 2026</p>
+  <!-- ═══════════════════ PAGE HEADER ═══════════════════ -->
+  <header class="relative bg-ink text-white overflow-hidden">
+    <div class="absolute inset-0 hero-field pointer-events-none" aria-hidden="true"></div>
+    <div class="relative max-w-3xl mx-auto px-6 pt-32 md:pt-36 pb-12 md:pb-16">
+      <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-white/50">Legal</p>
+      <h1 class="mt-5 text-4xl md:text-5xl font-bold leading-tight tracking-tight">Privacy Policy</h1>
+      <p class="text-sm text-white/45 mt-4 font-mono">Last updated: 21 May 2026</p>
     </div>
-  </section>
+  </header>
 
   <!-- ═══════════════════ BODY ═══════════════════ -->
-  <section class="pb-16 md:pb-20 px-6">
+  <section class="py-12 md:py-16 px-6">
     <div class="max-w-3xl mx-auto prose-custom">
 
       <p>
@@ -177,8 +198,8 @@
         This policy covers two groups:
       </p>
       <ul>
-        <li><strong>Operators</strong> — the safari and travel businesses that sign up for a SafiriPro account to run their business.</li>
-        <li><strong>Travellers</strong> — the end clients of those operators, whose contact details and trip information an operator may enter into SafiriPro.</li>
+        <li><strong>Operators</strong>: the safari and travel businesses that sign up for a SafiriPro account to run their business.</li>
+        <li><strong>Travellers</strong>: the end clients of those operators, whose contact details and trip information an operator may enter into SafiriPro.</li>
       </ul>
       <p>
         For traveller data, the operator is the data controller and SafiriPro is the data processor acting on their instructions.
@@ -188,41 +209,41 @@
 
       <h3>Information you give us</h3>
       <ul>
-        <li><strong>Account details</strong> — name, email, phone number, business name, and password.</li>
-        <li><strong>Billing details</strong> — billing address and payment information, handled by our payment processor (Paystack). We do not store full card numbers on our servers.</li>
-        <li><strong>Content you upload</strong> — logos, brand assets, supplier rates, hotel and activity details, trip itineraries, and client contact records.</li>
+        <li><strong>Account details</strong>: name, email, phone number, business name, and password.</li>
+        <li><strong>Billing details</strong>: billing address and payment information, handled by our payment processor (Paystack). We do not store full card numbers on our servers.</li>
+        <li><strong>Content you upload</strong>: logos, brand assets, supplier rates, hotel and activity details, trip itineraries, and client contact records.</li>
       </ul>
 
       <h3>Information we collect automatically</h3>
       <ul>
-        <li><strong>Usage data</strong> — pages visited, features used, actions taken, and approximate timestamps, used to improve the product.</li>
-        <li><strong>Device and log data</strong> — IP address, browser type, operating system, and device identifiers.</li>
-        <li><strong>Cookies</strong> — we use essential cookies to keep you signed in and a small number of analytics cookies to understand aggregate product usage.</li>
+        <li><strong>Usage data</strong>: pages visited, features used, actions taken, and approximate timestamps, used to improve the product.</li>
+        <li><strong>Device and log data</strong>: IP address, browser type, operating system, and device identifiers.</li>
+        <li><strong>Cookies</strong>: we use essential cookies to keep you signed in and a small number of analytics cookies to understand aggregate product usage.</li>
       </ul>
 
       <h3>Information from third parties</h3>
       <ul>
         <li>Payment and subscription status from Paystack.</li>
         <li>Delivery confirmations from our email and WhatsApp messaging providers.</li>
-        <li>Google Sign-In data — if you choose to create or access your account using "Continue with Google", Google shares your name, email address, email verification status, profile picture, and Google account identifier with us.</li>
+        <li>Google Sign-In data: if you choose to create or access your account using "Continue with Google", Google shares your name, email address, email verification status, profile picture, and Google account identifier with us.</li>
       </ul>
 
       <h3>Google Sign-In</h3>
       <p>
-        SafiriPro offers "Continue with Google" as an optional way to create or access your account. When you use it, we receive only your name, email address, email verification status, profile picture, and Google account identifier. We use this information solely to create and secure your SafiriPro account. We never receive your Google password, and we request only basic profile and email access — we do not access your Gmail, Drive, Calendar, contacts, or any other Google service. SafiriPro's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.
+        SafiriPro offers "Continue with Google" as an optional way to create or access your account. When you use it, we receive only your name, email address, email verification status, profile picture, and Google account identifier. We use this information solely to create and secure your SafiriPro account. We never receive your Google password, and we request only basic profile and email access. We do not access your Gmail, Drive, Calendar, contacts, or any other Google service. SafiriPro's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.
       </p>
 
       <h2>3. How we use your information</h2>
       <ul>
         <li>To provide, operate, and maintain the SafiriPro platform.</li>
         <li>To process subscription payments and send billing receipts.</li>
-        <li>To send transactional messages — password resets, deal handoff alerts, overdue task reminders, and client quote activity notifications.</li>
+        <li>To send transactional messages: password resets, deal handoff alerts, overdue task reminders, and client quote activity notifications.</li>
         <li>To improve the product: fix bugs, prioritize features, and understand how operators use SafiriPro.</li>
         <li>To provide customer support and respond to your requests.</li>
         <li>To comply with our legal obligations and enforce our Terms of Service.</li>
       </ul>
       <p>
-        We do <strong>not</strong> sell your data. We do <strong>not</strong> use the content you upload — your client lists, supplier rates, itineraries — to train third-party AI models.
+        We do <strong>not</strong> sell your data. We do <strong>not</strong> use the content you upload (your client lists, supplier rates, and itineraries) to train third-party AI models.
       </p>
 
       <h2>4. AI features and your data</h2>
@@ -235,7 +256,7 @@
         We share information only with:
       </p>
       <ul>
-        <li><strong>Service providers</strong> who help us run SafiriPro — hosting, email delivery, WhatsApp messaging, AI inference, analytics, and customer support tools — bound by confidentiality and data-protection obligations.</li>
+        <li><strong>Service providers</strong> who help us run SafiriPro (hosting, email delivery, WhatsApp messaging, AI inference, analytics, and customer support tools), bound by confidentiality and data-protection obligations.</li>
         <li><strong>Payment processors</strong> (Paystack) to handle your subscription billing.</li>
         <li><strong>Legal authorities</strong> if required by law, court order, or to protect the rights and safety of SafiriPro, our users, or the public.</li>
         <li><strong>A successor entity</strong> in the event of a merger, acquisition, or asset sale, with notice to affected users.</li>
@@ -286,44 +307,44 @@
   </section>
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
-  <footer class="border-t border-gray-100 py-10 px-6 bg-white">
+  <footer class="border-t border-ink/[0.07] py-12 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 mb-8">
         <div class="col-span-2 md:col-span-1">
           <div class="flex items-center gap-2 mb-3">
             <img src="images/safiri_logo.png" alt="SafiriPro" class="w-6 h-6 object-contain" />
-            <span class="text-base font-bold text-gray-900">SafiriPro</span>
+            <span class="text-base font-bold">SafiriPro</span>
           </div>
-          <p class="text-xs text-gray-600 leading-relaxed max-w-xs">The operating system for safari and travel businesses. Built for operators across Africa.</p>
-          <p class="text-[11px] text-gray-500 mt-2">A product of <span class="font-semibold text-gray-700">Peskaya Limited.</span></p>
+          <p class="text-xs text-ink/60 leading-relaxed max-w-xs">The quoting brain and operations system for safari and travel businesses. Built in Nairobi for operators across Africa.</p>
+          <p class="text-[11px] text-ink/45 mt-2">A product of <span class="font-semibold text-ink/70">Peskaya Limited.</span></p>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Product</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Product</p>
           <ul class="space-y-2">
-            <li><a href="features.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a></li>
-            <li><a href="pricing.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</a></li>
-            <li><a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a></li>
-            <li><a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a></li>
+            <li><a href="index.html#engine" class="text-sm text-ink/60 hover:text-ink transition-colors">How it works</a></li>
+            <li><a href="features.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Features</a></li>
+            <li><a href="pricing.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Pricing</a></li>
+            <li><a href="index.html#faq" class="text-sm text-ink/60 hover:text-ink transition-colors">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Company</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Company</p>
           <ul class="space-y-2">
-            <li><a href="about.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About</a></li>
-            <li><a href="mailto:hello@safiripro.com" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a></li>
+            <li><a href="about.html" class="text-sm text-ink/60 hover:text-ink transition-colors">About</a></li>
+            <li><a href="mailto:hello@safiripro.com" class="text-sm text-ink/60 hover:text-ink transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Legal</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Legal</p>
           <ul class="space-y-2">
-            <li><a href="privacy.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Privacy</a></li>
-            <li><a href="terms.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms</a></li>
-            <li><a href="security.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Security</a></li>
+            <li><a href="privacy.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Privacy</a></li>
+            <li><a href="terms.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Terms</a></li>
+            <li><a href="security.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Security</a></li>
           </ul>
         </div>
       </div>
-      <div class="pt-6 border-t border-gray-100">
-        <p class="text-xs text-gray-500">&copy; 2026 SafiriPro. All rights reserved.</p>
+      <div class="pt-6 border-t border-ink/[0.07]">
+        <p class="text-xs text-ink/45">&copy; 2026 SafiriPro. All rights reserved.</p>
       </div>
     </div>
   </footer>

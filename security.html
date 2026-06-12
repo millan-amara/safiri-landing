@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Security — SafiriPro</title>
+  <title>Security · SafiriPro</title>
   <meta name="description" content="How SafiriPro protects your business data and your clients' information." />
   <meta name="author" content="Peskaya Limited" />
-  <meta name="theme-color" content="#111827" />
+  <meta name="theme-color" content="#0E0D12" />
   <meta name="robots" content="index, follow" />
 
   <link rel="canonical" href="https://safiripro.com/security.html" />
 
-  <meta property="og:title" content="Security — SafiriPro" />
+  <meta property="og:title" content="Security · SafiriPro" />
   <meta property="og:description" content="How SafiriPro protects your business data and your clients' information." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://safiripro.com/security.html" />
@@ -21,10 +21,10 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content="SafiriPro — run your safari business from one platform. Start free for 14 days." />
+  <meta property="og:image:alt" content="SafiriPro: quote complex safari leads in minutes. Start free for 14 days." />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Security — SafiriPro" />
+  <meta name="twitter:title" content="Security · SafiriPro" />
   <meta name="twitter:description" content="How SafiriPro protects your business data and your clients' information." />
   <meta name="twitter:image" content="https://safiripro.com/images/og-card.png" />
 
@@ -55,7 +55,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -63,19 +63,27 @@
       theme: {
         extend: {
           colors: {
+            ink: {
+              DEFAULT: '#0E0D12',
+              raise: '#15141B',
+            },
+            porcelain: {
+              DEFAULT: '#F6F4EF',
+              deep: '#EFECE4',
+            },
             brand: {
-              DEFAULT: '#5048E5',
-              dark: '#3F37C0',
-              tint: '#EEF0FF',
+              DEFAULT: '#4B3FF2',
+              bright: '#7A70FF',
+              dark: '#372ECC',
+              tint: '#EDEBFF',
             },
-            cream: {
-              DEFAULT: '#F4F0E6',
-              soft: '#FAF7F0',
-            },
+            gold: { DEFAULT: '#C98A2E', soft: '#E8B65C' },
+            moss: { DEFAULT: '#168A5B', soft: '#2BC489' },
           },
           fontFamily: {
-            sans: ['Inter Tight', 'system-ui', '-apple-system', 'sans-serif'],
-            serif: ['Inter Tight', 'system-ui', '-apple-system', 'sans-serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['Instrument Serif', 'Georgia', 'serif'],
+            mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'],
           },
         },
       },
@@ -86,6 +94,7 @@
 
   <style>
     html { scroll-behavior: smooth; }
+    body { font-feature-settings: 'cv11', 'ss01'; }
 
     /* Mobile menu slide-down */
     @media (max-width: 767.98px) {
@@ -96,28 +105,46 @@
       }
       #mobile-nav.open { max-height: 400px; }
     }
+
+    /* Scroll-triggered reveal */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* Dark header background: fine grid + indigo bloom */
+    .hero-field {
+      background-image:
+        radial-gradient(ellipse 80% 70% at 50% -10%, rgba(75, 63, 242, 0.22), transparent 65%),
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+    }
   </style>
 </head>
-<body class="antialiased bg-white text-gray-900">
+<body class="antialiased bg-porcelain text-ink selection:bg-brand selection:text-white font-sans">
 
   <!-- ═══════════════════ NAV ═══════════════════ -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink/85 backdrop-blur-xl border-b border-white/[0.07]">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2">
+      <a href="index.html" class="flex items-center gap-2.5">
         <img src="images/safiri_logo.png" alt="SafiriPro" class="h-8 w-auto object-contain" />
-        <span class="text-base font-bold text-gray-900 tracking-tight">SafiriPro</span>
+        <span class="text-base font-bold text-white tracking-tight">SafiriPro</span>
       </a>
 
       <div class="hidden md:flex items-center gap-8">
-        <a href="features.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a>
-        <a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a>
-        <a href="pricing.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
-        <a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
+        <a href="index.html#engine" class="text-sm text-white/60 hover:text-white transition-colors">The engine</a>
+        <a href="features.html" class="text-sm text-white/60 hover:text-white transition-colors">Features</a>
+        <a href="pricing.html" class="text-sm text-white/60 hover:text-white transition-colors">Pricing</a>
+        <a href="index.html#faq" class="text-sm text-white/60 hover:text-white transition-colors">FAQ</a>
       </div>
 
       <div class="hidden md:flex items-center gap-3">
-        <a href="https://app.safiripro.com/login" class="text-sm text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors">Sign in</a>
-        <a href="https://app.safiripro.com/register" class="text-sm font-medium bg-brand text-white px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">Get started</a>
+        <a href="https://app.safiripro.com/login" class="text-sm text-white/60 hover:text-white px-3 py-2 transition-colors">Sign in</a>
+        <a href="https://app.safiripro.com/register" class="text-sm font-semibold bg-white text-ink px-4 py-2 rounded-lg hover:bg-white/90 transition-colors">Try free</a>
       </div>
 
       <button
@@ -126,66 +153,67 @@
         aria-expanded="false"
         aria-controls="mobile-nav"
         data-mobile-toggle
-        class="md:hidden p-2 text-gray-600">
+        class="md:hidden p-2 text-white/70">
         <span class="menu-icon"><i data-lucide="menu" class="w-5 h-5"></i></span>
         <span class="x-icon hidden"><i data-lucide="x" class="w-5 h-5"></i></span>
       </button>
     </div>
 
     <div id="mobile-nav" class="md:hidden" aria-hidden="true">
-      <div class="bg-white border-t border-gray-100 px-6 py-4 space-y-3">
-        <a href="features.html" class="block text-sm text-gray-600 py-2">Features</a>
-        <a href="index.html#how-it-works" class="block text-sm text-gray-600 py-2">How it works</a>
-        <a href="pricing.html" class="block text-sm text-gray-600 py-2">Pricing</a>
-        <a href="index.html#faq" class="block text-sm text-gray-600 py-2">FAQ</a>
-        <div class="pt-3 border-t border-gray-100 flex gap-3">
-          <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-gray-600 py-2.5 rounded-lg border border-gray-200">Sign in</a>
-          <a href="https://app.safiripro.com/register" class="flex-1 text-center text-sm font-medium bg-brand text-white py-2.5 rounded-lg">Get started</a>
+      <div class="bg-ink border-t border-white/[0.07] px-6 py-4 space-y-3">
+        <a href="index.html#engine" class="block text-sm text-white/70 py-2">The engine</a>
+        <a href="features.html" class="block text-sm text-white/70 py-2">Features</a>
+        <a href="pricing.html" class="block text-sm text-white/70 py-2">Pricing</a>
+        <a href="index.html#faq" class="block text-sm text-white/70 py-2">FAQ</a>
+        <div class="pt-3 border-t border-white/[0.07] flex gap-3">
+          <a href="https://app.safiripro.com/login" class="flex-1 text-center text-sm text-white/80 py-2.5 rounded-lg border border-white/15">Sign in</a>
+          <a href="https://app.safiripro.com/register" class="flex-1 text-center text-sm font-semibold bg-white text-ink py-2.5 rounded-lg">Try free</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- ═══════════════════ HERO ═══════════════════ -->
-  <section class="pt-28 pb-12 md:pt-32 md:pb-16 px-6">
-    <div class="max-w-3xl mx-auto">
-      <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-4">Security</p>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.05] tracking-[-0.025em]">
-        Your data, <span class="italic font-semibold text-brand">protected.</span>
+  <!-- ═══════════════════ PAGE HEADER ═══════════════════ -->
+  <header class="relative bg-ink text-white overflow-hidden">
+    <div class="absolute inset-0 hero-field pointer-events-none" aria-hidden="true"></div>
+    <div class="relative max-w-3xl mx-auto px-6 pt-32 md:pt-40 pb-16 md:pb-20">
+      <p class="text-[11px] font-mono uppercase tracking-[0.25em] text-white/50">Security</p>
+      <h1 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight">
+        Your data, <span class="font-serif italic font-normal text-gold-soft">protected</span>.
       </h1>
-      <p class="text-lg text-gray-600 mt-6 leading-relaxed max-w-2xl">
+      <p class="text-base md:text-lg text-white/60 mt-6 leading-relaxed max-w-2xl">
         Your client list, supplier rates, and quote history are some of the most valuable assets in your business. Here's how we keep them safe.
       </p>
     </div>
-  </section>
+  </header>
 
   <!-- ═══════════════════ PILLARS ═══════════════════ -->
-  <section class="pb-12 md:pb-16 px-6">
+  <section class="py-14 md:py-20 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-        <div class="border border-gray-100 rounded-xl p-6">
-          <div class="w-10 h-10 rounded-lg bg-cream flex items-center justify-center mb-4">
-            <i data-lucide="lock" class="w-5 h-5 text-brand" stroke-width="1.5"></i>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center mb-4">
+            <i data-lucide="lock" class="w-5 h-5 text-brand" stroke-width="2"></i>
           </div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Encrypted end to end</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">All traffic uses TLS 1.2+ in transit. Data at rest is encrypted with AES-256 on our hosting provider's managed infrastructure.</p>
+          <h3 class="text-base font-semibold mb-2">Encrypted end to end</h3>
+          <p class="text-sm text-ink/60 leading-relaxed">All traffic uses TLS 1.2+ in transit. Data at rest is encrypted with AES-256 on our hosting provider's managed infrastructure.</p>
         </div>
 
-        <div class="border border-gray-100 rounded-xl p-6">
-          <div class="w-10 h-10 rounded-lg bg-cream flex items-center justify-center mb-4">
-            <i data-lucide="shield-check" class="w-5 h-5 text-brand" stroke-width="1.5"></i>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.05s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-5 h-5 text-brand" stroke-width="2"></i>
           </div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Isolated per account</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">Every request is scoped to your company's workspace. Team permissions control who inside your company can view, edit, or export.</p>
+          <h3 class="text-base font-semibold mb-2">Isolated per account</h3>
+          <p class="text-sm text-ink/60 leading-relaxed">Every request is scoped to your company's workspace. Team permissions control who inside your company can view, edit, or export.</p>
         </div>
 
-        <div class="border border-gray-100 rounded-xl p-6">
-          <div class="w-10 h-10 rounded-lg bg-cream flex items-center justify-center mb-4">
-            <i data-lucide="database" class="w-5 h-5 text-brand" stroke-width="1.5"></i>
+        <div class="reveal rounded-2xl border border-ink/[0.08] bg-white p-7" style="transition-delay:.1s">
+          <div class="w-11 h-11 rounded-xl bg-brand-tint flex items-center justify-center mb-4">
+            <i data-lucide="database" class="w-5 h-5 text-brand" stroke-width="2"></i>
           </div>
-          <h3 class="text-base font-semibold text-gray-900 mb-2">Backed up daily</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">Automated daily backups with 30-day retention, stored in a separate region from the primary database.</p>
+          <h3 class="text-base font-semibold mb-2">Backed up daily</h3>
+          <p class="text-sm text-ink/60 leading-relaxed">Automated daily backups with 30-day retention, stored in a separate region from the primary database.</p>
         </div>
 
       </div>
@@ -193,80 +221,80 @@
   </section>
 
   <!-- ═══════════════════ DETAILS ═══════════════════ -->
-  <section class="pb-16 md:pb-20 px-6">
-    <div class="max-w-3xl mx-auto space-y-10">
+  <section class="pb-16 md:pb-24 px-6">
+    <div class="max-w-3xl mx-auto space-y-12">
 
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-4">Infrastructure</h2>
-        <p class="text-base text-gray-600 leading-relaxed">
+      <div class="reveal">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Infrastructure</h2>
+        <p class="text-base text-ink/65 leading-relaxed">
           SafiriPro runs on managed cloud infrastructure with SOC 2 Type II certified providers. Production systems live in locked-down private networks; no database is exposed directly to the internet. Secrets are stored in a dedicated secrets manager, never in code or configuration files.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-4">Access control</h2>
+      <div class="reveal">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Access control</h2>
         <ul class="space-y-3">
           <li class="flex gap-3">
-            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-brand"></i>
-            <p class="text-base text-gray-600 leading-relaxed"><span class="font-semibold text-gray-900">Role-based permissions</span> — owner, admin, and member roles limit who on your team can access sensitive features like billing, integrations, and exports.</p>
+            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-moss"></i>
+            <p class="text-base text-ink/65 leading-relaxed"><span class="font-semibold text-ink">Role-based permissions.</span> Owner, admin, and member roles limit who on your team can access sensitive features like billing, integrations, and exports.</p>
           </li>
           <li class="flex gap-3">
-            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-brand"></i>
-            <p class="text-base text-gray-600 leading-relaxed"><span class="font-semibold text-gray-900">Strong password requirements</span> — minimum length, common-password blocking, and breach-database checks on signup.</p>
+            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-moss"></i>
+            <p class="text-base text-ink/65 leading-relaxed"><span class="font-semibold text-ink">Strong password requirements.</span> Minimum length, common-password blocking, and breach-database checks on signup.</p>
           </li>
           <li class="flex gap-3">
-            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-brand"></i>
-            <p class="text-base text-gray-600 leading-relaxed"><span class="font-semibold text-gray-900">Session management</span> — tokens are rotated regularly and revoked on password change or logout from another device.</p>
+            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-moss"></i>
+            <p class="text-base text-ink/65 leading-relaxed"><span class="font-semibold text-ink">Session management.</span> Tokens are rotated regularly and revoked on password change or logout from another device.</p>
           </li>
           <li class="flex gap-3">
-            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-brand"></i>
-            <p class="text-base text-gray-600 leading-relaxed"><span class="font-semibold text-gray-900">Internal access is minimal</span> — only a small number of engineers have production access, it's audit-logged, and it requires multi-factor authentication.</p>
+            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-moss"></i>
+            <p class="text-base text-ink/65 leading-relaxed"><span class="font-semibold text-ink">Internal access is minimal.</span> Only a small number of engineers have production access, it's audit-logged, and it requires multi-factor authentication.</p>
           </li>
         </ul>
       </div>
 
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-4">Payments</h2>
-        <p class="text-base text-gray-600 leading-relaxed">
-          Subscription payments are processed by <span class="font-semibold text-gray-900">Paystack</span>, a PCI DSS Level 1 certified provider. Full card numbers never touch SafiriPro's servers — we only store a tokenized reference for recurring billing.
+      <div class="reveal">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Payments</h2>
+        <p class="text-base text-ink/65 leading-relaxed">
+          Subscription payments are processed by <span class="font-semibold text-ink">Paystack</span>, a PCI DSS Level 1 certified provider. Full card numbers never touch SafiriPro's servers; we only store a tokenized reference for recurring billing.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-4">Client-facing quote links</h2>
-        <p class="text-base text-gray-600 leading-relaxed">
-          Shareable quote links use long, unguessable identifiers — not sequential IDs. On Business and Enterprise plans you can add password protection and expiry dates so links don't remain open forever.
+      <div class="reveal">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Client-facing quote links</h2>
+        <p class="text-base text-ink/65 leading-relaxed">
+          Shareable quote links use long, unguessable identifiers, not sequential IDs. On Business and Enterprise plans you can add password protection and expiry dates so links don't remain open forever.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-4">Monitoring and incident response</h2>
-        <p class="text-base text-gray-600 leading-relaxed">
-          We monitor application health, error rates, authentication anomalies, and infrastructure integrity 24/7. If a security incident occurs, we follow a documented response playbook — contain, investigate, remediate — and notify affected customers within the timelines required by Kenya's Data Protection Act (and applicable GDPR timelines for EU data subjects).
+      <div class="reveal">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Monitoring and incident response</h2>
+        <p class="text-base text-ink/65 leading-relaxed">
+          We monitor application health, error rates, authentication anomalies, and infrastructure integrity 24/7. If a security incident occurs, we follow a documented response playbook (contain, investigate, remediate) and notify affected customers within the timelines required by Kenya's Data Protection Act (and applicable GDPR timelines for EU data subjects).
         </p>
       </div>
 
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-4">Your data, your choice</h2>
+      <div class="reveal">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Your data, your choice</h2>
         <ul class="space-y-3">
           <li class="flex gap-3">
-            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-brand"></i>
-            <p class="text-base text-gray-600 leading-relaxed"><span class="font-semibold text-gray-900">Exportable anytime</span> — you can export contacts, quotes, and inventory to CSV from your account at any time.</p>
+            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-moss"></i>
+            <p class="text-base text-ink/65 leading-relaxed"><span class="font-semibold text-ink">Exportable anytime.</span> You can export contacts, quotes, and inventory to CSV from your account at any time.</p>
           </li>
           <li class="flex gap-3">
-            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-brand"></i>
-            <p class="text-base text-gray-600 leading-relaxed"><span class="font-semibold text-gray-900">Deletable on request</span> — close your account and we delete or anonymize your data within 90 days, subject to required retention for legal and tax purposes.</p>
+            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-moss"></i>
+            <p class="text-base text-ink/65 leading-relaxed"><span class="font-semibold text-ink">Deletable on request.</span> Close your account and we delete or anonymize your data within 90 days, subject to required retention for legal and tax purposes.</p>
           </li>
           <li class="flex gap-3">
-            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-brand"></i>
-            <p class="text-base text-gray-600 leading-relaxed"><span class="font-semibold text-gray-900">Not sold, not used for model training</span> — we never sell your data and we never use your content to train third-party AI models.</p>
+            <i data-lucide="check" class="w-5 h-5 mt-0.5 shrink-0 text-moss"></i>
+            <p class="text-base text-ink/65 leading-relaxed"><span class="font-semibold text-ink">Not sold, not used for model training.</span> We never sell your data and we never use your content to train third-party AI models.</p>
           </li>
         </ul>
       </div>
 
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-4">Reporting a vulnerability</h2>
-        <p class="text-base text-gray-600 leading-relaxed">
+      <div class="reveal">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Reporting a vulnerability</h2>
+        <p class="text-base text-ink/65 leading-relaxed">
           Found something? We want to hear from you. Email <a href="mailto:security@safiripro.com" class="text-brand underline underline-offset-2 hover:text-brand-dark">security@safiripro.com</a> with details and, if possible, reproduction steps. We commit to acknowledging reports within 2 business days and keeping you updated until the issue is resolved. Please give us a reasonable window to fix issues before public disclosure.
         </p>
       </div>
@@ -275,50 +303,51 @@
   </section>
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
-  <footer class="border-t border-gray-100 py-10 px-6 bg-white">
+  <footer class="border-t border-ink/[0.07] py-12 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 mb-8">
         <div class="col-span-2 md:col-span-1">
           <div class="flex items-center gap-2 mb-3">
             <img src="images/safiri_logo.png" alt="SafiriPro" class="w-6 h-6 object-contain" />
-            <span class="text-base font-bold text-gray-900">SafiriPro</span>
+            <span class="text-base font-bold">SafiriPro</span>
           </div>
-          <p class="text-xs text-gray-600 leading-relaxed max-w-xs">The operating system for safari and travel businesses. Built for operators across Africa.</p>
-          <p class="text-[11px] text-gray-500 mt-2">A product of <span class="font-semibold text-gray-700">Peskaya Limited.</span></p>
+          <p class="text-xs text-ink/60 leading-relaxed max-w-xs">The quoting brain and operations system for safari and travel businesses. Built in Nairobi for operators across Africa.</p>
+          <p class="text-[11px] text-ink/45 mt-2">A product of <span class="font-semibold text-ink/70">Peskaya Limited.</span></p>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Product</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Product</p>
           <ul class="space-y-2">
-            <li><a href="features.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a></li>
-            <li><a href="pricing.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</a></li>
-            <li><a href="index.html#how-it-works" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">How it works</a></li>
-            <li><a href="index.html#faq" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</a></li>
+            <li><a href="index.html#engine" class="text-sm text-ink/60 hover:text-ink transition-colors">How it works</a></li>
+            <li><a href="features.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Features</a></li>
+            <li><a href="pricing.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Pricing</a></li>
+            <li><a href="index.html#faq" class="text-sm text-ink/60 hover:text-ink transition-colors">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Company</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Company</p>
           <ul class="space-y-2">
-            <li><a href="about.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About</a></li>
-            <li><a href="mailto:hello@safiripro.com" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a></li>
+            <li><a href="about.html" class="text-sm text-ink/60 hover:text-ink transition-colors">About</a></li>
+            <li><a href="mailto:hello@safiripro.com" class="text-sm text-ink/60 hover:text-ink transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Legal</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-ink/45 mb-3">Legal</p>
           <ul class="space-y-2">
-            <li><a href="privacy.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Privacy</a></li>
-            <li><a href="terms.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms</a></li>
-            <li><a href="security.html" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Security</a></li>
+            <li><a href="privacy.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Privacy</a></li>
+            <li><a href="terms.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Terms</a></li>
+            <li><a href="security.html" class="text-sm text-ink/60 hover:text-ink transition-colors">Security</a></li>
           </ul>
         </div>
       </div>
-      <div class="pt-6 border-t border-gray-100">
-        <p class="text-xs text-gray-500">&copy; 2026 SafiriPro. All rights reserved.</p>
+      <div class="pt-6 border-t border-ink/[0.07]">
+        <p class="text-xs text-ink/45">&copy; 2026 SafiriPro. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
+
     function toggleNav(open) {
       const nav = document.getElementById('mobile-nav');
       const btn = document.querySelector('[data-mobile-toggle]');
@@ -334,6 +363,19 @@
     document.getElementById('mobile-nav')?.addEventListener('click', e => {
       if (e.target.closest('a')) toggleNav(false);
     });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('in'));
+    }
   </script>
 </body>
 </html>
